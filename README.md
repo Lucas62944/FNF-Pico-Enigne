@@ -1,6 +1,23 @@
 # Friday Night Funkin' - Pico Engine
 please go here to download the other Pico Mods please https://gamebanana.com/mods/529389
 
-## Credits:
+## Credits
 * Lucas - he was the person who programmed the Pico Engine
-"# Pico-Enigne" 
+"# Pico-Enigne"
+
+## Future implementations
+* In the next update there will be a character editor that can save the character's positions in the mod
+
+![image](https://github.com/user-attachments/assets/c93ef213-7381-4216-b5fa-a38d02be2ad8)
+
+and some more freeplay edits and some extra things
+
+## Main menu
+
+![image](https://github.com/user-attachments/assets/7b2d6a38-6d3f-4650-9460-689ff161c607)
+
+There are some more things in the main menu like new Achievements
+we will have story mode back with week 3 of Arrow funk and much more
+
+## Uupdates
+* the update now and 2.1
