@@ -19,5 +19,12 @@ and some more freeplay edits and some extra things
 There are some more things in the main menu like new Achievements
 we will have story mode back with week 3 of Arrow funk and much more
 
+## Settings
+
+ ![image](https://github.com/user-attachments/assets/56cae3dd-d44b-40b2-9c58-26205b3d3927)
+
+* Now the pico mod has an engine for the mod
+
+
 ## Uupdates
 * the update now and 2.1
