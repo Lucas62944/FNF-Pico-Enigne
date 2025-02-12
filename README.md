@@ -25,6 +25,10 @@ we will have story mode back with week 3 of Arrow funk and much more
 
 * Now the pico mod has an engine for the mod
 
+## Pause Menu
+![image](https://github.com/user-attachments/assets/cfde74b0-1ca0-4d73-8560-ce0028e44583)
+
+
 
 ## Uupdates
 * the update now and 2.1
