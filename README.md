@@ -30,5 +30,5 @@ we will have story mode back with week 3 of Arrow funk and much more
 
 
 
-## Uupdates
+## Updates
 * the update now and 2.1
