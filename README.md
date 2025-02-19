@@ -3,7 +3,6 @@
 
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
-"# Pico-Enigne"
 
 ## Mod Proposal
 
