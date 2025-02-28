@@ -4,6 +4,10 @@
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
 
+## Special Thanks
+* GitHub Copilot
+* he was the one who made half of the hx files for the stages
+
 ## Mod Proposal
 
 * you are playing a new fnf mod vs Pico it has several engines and it is made just by one person who is me this mod has the main objective of bringing Pico as a player character and not just the mixes he received in V-Slice but bringing with it new music even if it is from another mod or even updating it, you can have in one place what is my proposal with the mod itself, I hope you like the mod and there will be more updates in the future with new things. until
