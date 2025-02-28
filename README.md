@@ -5,8 +5,7 @@
 * Lucas - he was the person who programmed the Pico Engine
 
 ## Special Thanks
-* GitHub Copilot
-* he was the one who made half of the hx files for the stages
+* GitHub Copilot he was the one who made half of the hx files for the stages
 
 ## Mod Proposal
 
