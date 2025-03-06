@@ -6,6 +6,7 @@
 
 ## Special Thanks
 * GitHub Copilot he was the one who made half of the hx files for the stages
+* Mikolka She made the P-Slice engine and also made the ports of the Erect stages that are being used in my mod
 
 ## Mod Proposal
 
