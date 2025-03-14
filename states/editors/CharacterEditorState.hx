@@ -386,7 +386,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			updatePointerPos(false);
 		};
 
-		var reloadCharacter:PsychUIButton = new PsychUIButton(140, 20, "Reload", function()
+		var reloadCharacter:PsychUIButton = new PsychUIButton(140, 20, "Reload Char", function()
 		{
 			addCharacter(true);
 			updatePointerPos();
@@ -394,7 +394,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 			reloadCharacterDropDown();
 		});
 
-		var templateCharacter:PsychUIButton = new PsychUIButton(140, 50, "New Template", function()
+		var templateCharacter:PsychUIButton = new PsychUIButton(140, 50, "Load Template", function()
 		{
 			final _template:CharacterFile =
 			{
@@ -1068,7 +1068,7 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		}
 	}
 
-	final assetFolder = 'week3';  //load from assets/week3/
+	final assetFolder = 'week1';  //load from assets/week1/
 	inline function loadBG()
 	{
 		var lastLoaded = Paths.currentLevel;
@@ -1080,16 +1080,13 @@ class CharacterEditorState extends MusicBeatState implements PsychUIEventHandler
 		#if !BASE_GAME_FILES
 		camEditor.bgColor = 0xFF666666;
 		#else
-		var street:BGSprite = new BGSprite('philly/erect/street', -40, 50, 1, 1);
-		add(street);
+		var bg:BGSprite = new BGSprite('stageback', -600, -200, 0.9, 0.9);
+		add(bg);
 
-		var city:BGSprite = new BGSprite('philly/erect/city', -10, 0, 0.3, 0.3);
-		city.setGraphicSize(Std.int(city.width * 0.85));
-		city.updateHitbox();
-		add(city);
-
-		var sky:BGSprite = new BGSprite('philly/erect/sky', -100, 0, 0.1, 0.1);
-		add(sky);
+		var stageFront:BGSprite = new BGSprite('stagefront', -650, 600, 0.9, 0.9);
+		stageFront.setGraphicSize(Std.int(stageFront.width * 1.1));
+		stageFront.updateHitbox();
+		add(stageFront);
 		#end
 
 		dadPosition.set(100, 100);

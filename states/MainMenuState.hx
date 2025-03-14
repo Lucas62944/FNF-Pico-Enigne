@@ -14,8 +14,7 @@ enum MainMenuColumn {
 
 class MainMenuState extends MusicBeatState
 {
-    public static var picoEngineVersion:String = '2.2 Mini Update'; // This is also used for Discord RPC
-    public static var psychEngineVersion:String = '1.3';
+    public static var picoEngineVersion:String = '2.2 Opponent Mode Update'; // This is also used for Discord RPC
     public static var curSelected:Int = 0;
     public static var curColumn:MainMenuColumn = CENTER;
     var allowMouse:Bool = true; //Turn this off to block mouse movement in menus
@@ -27,12 +26,11 @@ class MainMenuState extends MusicBeatState
     //Centered/Text options
     var optionShit:Array<String> = [
         'freeplay',
-        'options',
         'credits'
     ];
 
     var leftOption:String = null;
-    var rightOption:String = null;
+    var rightOption:String = 'options';
 
     var magenta:FlxSprite;
     var camFollow:FlxObject;
@@ -42,6 +40,9 @@ class MainMenuState extends MusicBeatState
     {
         super.create();
 
+        #if MODS_ALLOWED
+        Mods.pushGlobalMods();
+        #end
         Mods.loadTopMod();
 
         #if DISCORD_ALLOWED
@@ -83,20 +84,23 @@ class MainMenuState extends MusicBeatState
             item.screenCenter(X);
         }
 
-        var picoVer:FlxText = new FlxText(12, FlxG.height - 64, 0, "Pico Engine V " + picoEngineVersion, 22);
+        if (leftOption != null)
+            leftItem = createMenuItem(leftOption, 60, 490);
+        if (rightOption != null)
+        {
+            rightItem = createMenuItem(rightOption, FlxG.width - 60, 490);
+            rightItem.x -= rightItem.width;
+        }
+
+        var picoVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pico-Engine V" + picoEngineVersion, 12);
         picoVer.scrollFactor.set();
         picoVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         add(picoVer);
 
-        var psychVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Psych Engine V " + psychEngineVersion, 13);
+        var psychVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Psych Engine V" + Application.current.meta.get('version'), 12);
         psychVer.scrollFactor.set();
         psychVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         add(psychVer);
-
-        var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' V" + Application.current.meta.get('version'), 12);
-        fnfVer.scrollFactor.set();
-        fnfVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-        add(fnfVer);
         changeItem();
 
         #if CHECK_FOR_UPDATES
@@ -277,8 +281,15 @@ class MainMenuState extends MusicBeatState
                 {
                     switch (option)
                     {
+                        case 'story_mode':
+                            MusicBeatState.switchState(new StoryMenuState());
                         case 'freeplay':
                             MusicBeatState.switchState(new FreeplayState());
+
+                        #if MODS_ALLOWED
+                        case 'mods':
+                            MusicBeatState.switchState(new ModsMenuState());
+                        #end
 
                         case 'credits':
                             MusicBeatState.switchState(new CreditsState());
@@ -305,7 +316,7 @@ class MainMenuState extends MusicBeatState
                 for (memb in menuItems)
                 {
                     if(memb == item)
-                        continue;
+                     continue;
 
                     FlxTween.tween(memb, {alpha: 0}, 0.4, {ease: FlxEase.quadOut});
                 }

@@ -21,7 +21,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the credits", null);
 		#end
 
 		persistentUpdate = true;
@@ -41,13 +41,31 @@ class CreditsState extends MusicBeatState
 			["Pico Engine Team"],
 			["Lucas",		"Lucas",		"he was the programmer of Pico Engine",					"https://github.com/Lucas62944/Pico-Enigne",	"C20303"],
 			[""],
-			["Psych Engine Team"],
-			["Shadow Mario",		"shadowmario",		"Psych Engine Lead Programmer",					"https://github.com/ShadowMario/FNF-PsychEngine",	"444444"],
+			["Creator Psych Engine"],
+			["Shadow Mario",		"shadowmario",		"He programmed the Psych Engine where the Pico Engine is being made",					"https://github.com/ShadowMario/FNF-PsychEngine",	"444444"],
 			[""],
 			["mods used from V2"],
-			["girlfriend",		"gf",	"There are some girlfriend mixes in the mod",			"https://gamebanana.com/mods/309789",	"D30058"],
-			["Ski",		 "icon", 		"ski is available to play in week3 and weekwnd1", 				"https://gamebanana.com/mods/560251",	"F100D7"],
-			["Darnell",	 "darnell", 	"Darnell is available to play in freeplay and also in week 3 and weekend 1",					 "https://gamebanana.com/mods/569273",	"3900D7"],
+			["Girlfriend Mix",		"gf",	"There are some girlfriend mixes in the mod",			"https://gamebanana.com/mods/553809",	"D30058"],
+			["Ski Mix",		 "Ski", 		"ski is available to play in week3 and weekwnd1", 				"https://gamebanana.com/mods/560251",	"F100D7"],
+			["Darnell Mix",	 "darnell", 	"Darnell is available to play in freeplay and also in week 3 and weekend 1",					 "https://gamebanana.com/mods/569273",	"3900D7"],
+			["Pico faker Mix",	 "Pico-Faker", 	"It is not available yet, expect it soon",			 "https://gamebanana.com/mods/347850",  	"62752C"],
+			[""],
+			["Funkin' Crew"],
+			["ninjamuffin99",		"ninjamuffin99",	"Programmer of Friday Night Funkin`",			"https://twitter.com/ninja_muffin99",	"CF2D2D"],
+			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",								'https://twitter.com/PhantomArcade3K',	'FADC45'],
+			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",								'https://twitter.com/evilsk8r',			'5ABD4B'],
+			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",								'https://twitter.com/kawaisprite',		'378FC7'],
+			[""],
+			["Special Thanks"],
+			["LeGooey",		"gooey",	 "he created BF Mix weekend 1",			"https://gamebanana.com/members/2322712",	"2ebcfa"],
+			['Mikolka',			'mikolka',			'She made the P-Slice engine and also made the ports of the Erect stages that are being used in my mod',  'https://github.com/Psych-Slice/P-Slice/releases',   '2ebcfa'],
+			["Shadow Mario",		"shadowmario",		"he who created the script to be able to play with the opponent",	"https://gamebanana.com/mods/458072",	"444444"],
+			["Vanished-Demon",		"icon",		"he created the Darnell Mixs that are being used in the mod",	"https://gamebanana.com/members/2170922",	"3900D7"],
+			['RPG Visual',			'RPG',			'He created the Girlfriend and Doki Blammed-Natsuki Mixes',  'https://gamebanana.com/members/2040154',   'FFFFFF'],
+			["GitHub Copilot",		"icon",	 "he was the one who made half of the hx files for the stages",			"https://github.com/features/copilot",	"FFFFFF"],
+			["SoniverseU",		"soni",		"he created the character Ski",	"https://gamebanana.com/members/1709272",	"FFFFFF"],
+			["Pink Lemonade",		"Lemonade",		"She created the Ski Mixes that are being used in my mod",	"https://gamebanana.com/members/1798934",	"FFFFFF"],
+			["HorrorPro",		"Horror",		"He created the Week 7 Mixes with Darnell",	"https://gamebanana.com/mods/446000",	"0xFFF2A52BE"],
 		];
 		
 		for(i in defaultList)

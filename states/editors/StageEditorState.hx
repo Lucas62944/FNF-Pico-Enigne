@@ -247,8 +247,8 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 			camFollow.setPosition(point.x, point.y);
 			FlxG.camera.target = camFollow;
 		}
-		focusRadioGroup.radios[1].label = 'Boyfriend';
 		focusRadioGroup.radios[0].label = 'Opponent';
+		focusRadioGroup.radios[1].label = 'Boyfriend';
 		focusRadioGroup.radios[2].label = 'Girlfriend';
 
 		for (radio in focusRadioGroup.radios)
@@ -547,12 +547,12 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 
 			switch(spr.type)
 			{
+				case 'gf':
+					nameList.push('- Girlfriend -');
 				case 'boyfriend':
 					nameList.push('- Boyfriend -');
 				case 'dad':
 					nameList.push('- Opponent -');
-				case 'gf':
-					nameList.push('- Girlfriend -');
 				default:
 					nameList.push(spr.name);
 			}
@@ -611,7 +611,7 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 
 		var objX = 10;
 		var objY = 20;
-		tab_group.add(new FlxText(objX, objY - 18, 150, 'Compiled:'));
+		tab_group.add(new FlxText(objX, objY - 18, 150, 'Compiled Assets:'));
 
 		var folderList:Array<String> = [''];
 		#if sys
@@ -1008,7 +1008,7 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 		var objX = 10;
 		var objY = 20;
 
-		var openPreloadButton:PsychUIButton = new PsychUIButton(objX, objY, 'Preload', function() {
+		var openPreloadButton:PsychUIButton = new PsychUIButton(objX, objY, 'Preload List', function() {
 			var lockedList:Array<String> = [];
 			var currentMap:Map<String, LoadFilters> = [];
 			for (spr in stageSprites)
@@ -1111,7 +1111,7 @@ class StageEditorState extends MusicBeatState implements PsychUIEventHandler.Psy
 			reloadStageDropDown();
 		});
 
-		var dummyStage:PsychUIButton = new PsychUIButton(140, 40, 'New Template', function()
+		var dummyStage:PsychUIButton = new PsychUIButton(140, 40, 'Load Template', function()
 		{
 			#if DISCORD_ALLOWED
 			DiscordClient.changePresence('Stage Editor', 'New Stage');
