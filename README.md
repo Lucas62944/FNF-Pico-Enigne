@@ -1,4 +1,4 @@
-# Friday Night Funkin' - Pico Engine
+# Friday Night Funkin-Pico Engine
 * please go here to download the other Pico Mods please https://gamebanana.com/mods/529389
 
 ## Credits
@@ -40,4 +40,4 @@ we will have story mode back with week 3 of Arrow funk and much more
 
 
 ## Updates
-* the update now and 2.2-Pre-release
+* the update now and final update to 2.2
