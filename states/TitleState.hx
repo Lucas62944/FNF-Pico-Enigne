@@ -527,7 +527,7 @@ class TitleState extends MusicBeatState
 					FlxG.sound.playMusic(Paths.music('freakyMenu'), 0);
 					FlxG.sound.music.fadeIn(4, 0, 0.7);
 				case 2:
-					createCoolText(['Pico-Engine BY'], 40);
+					createCoolText(['Pico Engine by'], 40);
 				case 4:
 					addMoreText('Lucas', 40);
 				case 5:
@@ -547,6 +547,13 @@ class TitleState extends MusicBeatState
 				case 13:
 					deleteCoolText();
 				case 14:
+					addMoreText('Friday');
+				case 15:
+					addMoreText('Night');
+				case 16:
+					addMoreText('Funkin'); // credTextShit.text += '\nFunkin';
+
+				case 17:
 					skipIntro();
 			}
 		}

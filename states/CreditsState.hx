@@ -21,7 +21,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the credits", null);
+		DiscordClient.changePresence("In the Menus", null);
 		#end
 
 		persistentUpdate = true;
@@ -38,34 +38,37 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			["Pico Engine Team"],
-			["Lucas",		"Lucas",		"he was the programmer of Pico Engine",					"https://github.com/Lucas62944/Pico-Enigne",	"C20303"],
+			["Pico Engine 2.2 Demo"],
+			["lucas",		"icon",		"he was the programmer of Pico Engin",					"https://beacons.ai/lucassmb?fbclid=PAZXh0bgNhZW0CMTEAAacY4PlNCeH_AYPLxfiMxm-5TuHmwwlHZMayR9F26IFixa2RiBHSHY9kKQMIvA_aem_Gtur_PrgdhXZDATGb6mlTg",	"0026FF"],
 			[""],
-			["Creator Psych Engine"],
-			["Shadow Mario",		"shadowmario",		"He programmed the Psych Engine where the Pico Engine is being made",					"https://github.com/ShadowMario/FNF-PsychEngine",	"444444"],
+			["Psych Engine Team"],
+			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",	"444444"],
+			["Riveren",				"riveren",			"Main Artist/Animator of Psych Engine",						"https://x.com/riverennn",			"14967B"],
 			[""],
-			["mods used from V2"],
-			["Girlfriend Mix",		"gf",	"There are some girlfriend mixes in the mod",			"https://gamebanana.com/mods/553809",	"D30058"],
-			["Ski Mix",		 "Ski", 		"ski is available to play in week3 and weekwnd1", 				"https://gamebanana.com/mods/560251",	"F100D7"],
-			["Darnell Mix",	 "darnell", 	"Darnell is available to play in freeplay and also in week 3 and weekend 1",					 "https://gamebanana.com/mods/569273",	"3900D7"],
-			["Pico faker Mix",	 "Pico-Faker", 	"It is not available yet, expect it soon",			 "https://gamebanana.com/mods/347850",  	"62752C"],
+			["Former Engine Members"],
+			["bb-panzu",			"bb",				"Ex-Programmer of Psych Engine",							"https://x.com/bbsub3",				"3E813A"],
+			[""],
+			["Engine Contributors"],
+			["crowplexus",			"crowplexus",	"Linux Support, HScript Iris, Input System v3, and Other PRs",	"https://twitter.com/IamMorwen",	"CFCFCF"],
+			["Kamizeta",			"kamizeta",			"Creator of Pessy, Psych Engine's mascot.",				"https://www.instagram.com/cewweey/",	"D21C11"],
+			["MaxNeton",			"maxneton",			"Loading Screen Easter Egg Artist/Animator.",	"https://bsky.app/profile/maxneton.bsky.social","3C2E4E"],
+			["Keoiki",				"keoiki",			"Note Splash Animations and Latin Alphabet",				"https://x.com/Keoiki_",			"D2D2D2"],
+			["SqirraRNG",			"sqirra",			"Crash Handler and Base code for\nChart Editor's Waveform",	"https://x.com/gedehari",			"E1843A"],
+			["EliteMasterEric",		"mastereric",		"Runtime Shaders support and Other PRs",					"https://x.com/EliteMasterEric",	"FFBD40"],
+			["MAJigsaw77",			"majigsaw",			".MP4 Video Loader Library (hxvlc)",						"https://x.com/MAJigsaw77",			"5F5F5F"],
+			["iFlicky",				"flicky",			"Composer of Psync and Tea Time\nAnd some sound effects",	"https://x.com/flicky_i",			"9E29CF"],
+			["KadeDev",				"kade",				"Fixed some issues on Chart Editor and Other PRs",			"https://x.com/kade0912",			"64A250"],
+			["superpowers04",		"superpowers04",	"LUA JIT Fork",												"https://x.com/superpowers04",		"B957ED"],
+			["CheemsAndFriends",	"cheems",			"Creator of FlxAnimate",									"https://x.com/CheemsnFriendos",	"E1E1E1"],
 			[""],
 			["Funkin' Crew"],
-			["ninjamuffin99",		"ninjamuffin99",	"Programmer of Friday Night Funkin`",			"https://twitter.com/ninja_muffin99",	"CF2D2D"],
-			['PhantomArcade',		'phantomarcade',	"Animator of Friday Night Funkin'",								'https://twitter.com/PhantomArcade3K',	'FADC45'],
-			['evilsk8r',			'evilsk8r',			"Artist of Friday Night Funkin'",								'https://twitter.com/evilsk8r',			'5ABD4B'],
-			['kawaisprite',			'kawaisprite',		"Composer of Friday Night Funkin'",								'https://twitter.com/kawaisprite',		'378FC7'],
+			["ninjamuffin99",		"ninjamuffin99",	"Programmer of Friday Night Funkin'",						"https://x.com/ninja_muffin99",		"CF2D2D"],
+			["PhantomArcade",		"phantomarcade",	"Animator of Friday Night Funkin'",							"https://x.com/PhantomArcade3K",	"FADC45"],
+			["evilsk8r",			"evilsk8r",			"Artist of Friday Night Funkin'",							"https://x.com/evilsk8r",			"5ABD4B"],
+			["kawaisprite",			"kawaisprite",		"Composer of Friday Night Funkin'",							"https://x.com/kawaisprite",		"378FC7"],
 			[""],
-			["Special Thanks"],
-			["LeGooey",		"gooey",	 "he created BF Mix weekend 1",			"https://gamebanana.com/members/2322712",	"2ebcfa"],
-			['Mikolka',			'mikolka',			'She made the P-Slice engine and also made the ports of the Erect stages that are being used in my mod',  'https://github.com/Psych-Slice/P-Slice/releases',   '2ebcfa'],
-			["Shadow Mario",		"shadowmario",		"he who created the script to be able to play with the opponent",	"https://gamebanana.com/mods/458072",	"444444"],
-			["Vanished-Demon",		"icon",		"he created the Darnell Mixs that are being used in the mod",	"https://gamebanana.com/members/2170922",	"3900D7"],
-			['RPG Visual',			'RPG',			'He created the Girlfriend and Doki Blammed-Natsuki Mixes',  'https://gamebanana.com/members/2040154',   'FFFFFF'],
-			["GitHub Copilot",		"icon",	 "he was the one who made half of the hx files for the stages",			"https://github.com/features/copilot",	"FFFFFF"],
-			["SoniverseU",		"soni",		"he created the character Ski",	"https://gamebanana.com/members/1709272",	"FFFFFF"],
-			["Pink Lemonade",		"Lemonade",		"She created the Ski Mixes that are being used in my mod",	"https://gamebanana.com/members/1798934",	"FFFFFF"],
-			["HorrorPro",		"Horror",		"He created the Week 7 Mixes with Darnell",	"https://gamebanana.com/mods/446000",	"0xFFF2A52BE"],
+			["Psych Engine Discord"],
+			["Join the Psych Ward!", "discord", "", "https://discord.gg/2ka77eMXDv", "5165F6"]
 		];
 		
 		for(i in defaultList)

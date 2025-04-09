@@ -264,7 +264,7 @@ class VSlice
 
 			Reflect.setField(swagSong, 'artist', metadata.artist);
 			Reflect.setField(swagSong, 'charter', metadata.charter);
-			Reflect.setField(swagSong, 'generatedBy', 'Pico Engine v${MainMenuState.picoEngineVersion} - Chart Editor V-Slice Importer');
+			Reflect.setField(swagSong, 'generatedBy', 'Pico Engine V${MainMenuState.picoEngineVersion} - Chart V-Slice Convert');
 			songDifficulties.set(diff, swagSong);
 		}
 		var pack:PsychPackage = {difficulties: songDifficulties, events: null};
@@ -329,7 +329,7 @@ class VSlice
 		}
 
 		var notes:Array<VSliceNote> = [];
-		var generatedBy:String = 'Pico Engine V${MainMenuState.picoEngineVersion} - Chart Editor V-Slice Exporter';
+		var generatedBy:String = 'Pico Engine V${MainMenuState.picoEngineVersion} - Chart V-Slice Exporter';
 		var timeChanges:Array<VSliceTimeChange> = [];
 		
 		var time:Float = 0;

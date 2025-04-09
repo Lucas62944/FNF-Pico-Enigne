@@ -14,7 +14,7 @@ enum MainMenuColumn {
 
 class MainMenuState extends MusicBeatState
 {
-    public static var picoEngineVersion:String = '2.2 Opponent Mode Update'; // This is also used for Discord RPC
+	public static var picoEngineVersion:String = '2.2 Demo'; // This is also used for Discord RPC
     public static var curSelected:Int = 0;
     public static var curColumn:MainMenuColumn = CENTER;
     var allowMouse:Bool = true; //Turn this off to block mouse movement in menus
@@ -92,12 +92,12 @@ class MainMenuState extends MusicBeatState
             rightItem.x -= rightItem.width;
         }
 
-        var picoVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pico-Engine V" + picoEngineVersion, 12);
-        picoVer.scrollFactor.set();
+        var picoVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pico Engine V" + picoEngineVersion, 12);
+    	picoVer.scrollFactor.set();
         picoVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         add(picoVer);
 
-        var psychVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Psych Engine V" + Application.current.meta.get('version'), 12);
+        var psychVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Psych Engine V-" + Application.current.meta.get('version'), 12);
         psychVer.scrollFactor.set();
         psychVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
         add(psychVer);
@@ -316,7 +316,7 @@ class MainMenuState extends MusicBeatState
                 for (memb in menuItems)
                 {
                     if(memb == item)
-                     continue;
+                        continue;
 
                     FlxTween.tween(memb, {alpha: 0}, 0.4, {ease: FlxEase.quadOut});
                 }

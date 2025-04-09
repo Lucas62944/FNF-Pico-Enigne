@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project
+<project>
+
 xmlns="http://lime.openfl.org/project/1.0.4"
 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/xsd/project-1.0.4.xsd">
+
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin - Pico-Engine" file="Pico-Engine" packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.Pico-Enigne" main="Main" version="1.0.3" company="Lucas62944" />
+	<app title="Friday Night Funkin-Pico Engine" file="Engine" packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.Pico-Enigne" main="Main" version="1.0.3" company="Lucas62944" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -30,11 +32,9 @@ xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/
 	<define name="DISCORD_ALLOWED" />
 	<define name="TRANSLATIONS_ALLOWED" />
 	<define name="IRIS_DEBUG"/>
-
-	<!-- Do you want to check for Pico-Engine updates?-->
 	<define name="CHECK_FOR_UPDATES"/>
 	
-	<define name="MULTITHREADED_LOADING" /> <!-- UNCOMMENTING THIS LINE WILL ENABLE MULTITHREADED LOADING, WHICH IMPROVES LOADING TIMES, BUT WITH A LOW CHANCE FOR THE GAME FREEZE ON SONG LOAD -->
+	<define name="MULTITHREADED_LOADING" /> <!-- UNCOMMENTING THIS LINE WILL ENABLE MULTITHREADED LOADING, WHICH IMPROVES LOADING TIMES, BUT APPARENTLY CAN FREEZE THE GAME ON SONG LOAD IN OLDER PCs? -->
 	<define name="SHOW_LOADING_SCREEN" />
 	<define name="PSYCH_WATERMARKS"/> <!-- DELETE THIS TO REMOVE THE PSYCH LOGO FROM LOADING SCREEN -->
 
@@ -107,9 +107,9 @@ xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/
 	<section if="MODS_ALLOWED">
 		<assets path='example_mods' rename='mods' embed='false' type='template' unless="mac"/>
 		<assets path='example_mods' rename='mods' embed='false' if="mac"/>
+		<assets path='list.txt' rename='modsList.txt' />
 	</section>
 	<assets path='art/readme.txt' rename='do NOT readme.txt' />
-	<assets path='list.txt' rename='modsList.txt' />
 
 	<!-- OpenAL config -->
 	<section if="desktop">
@@ -195,7 +195,7 @@ xsi:schemaLocation="http://lime.openfl.org/project/1.0.4 http://lime.openfl.org/
 
 	<!-- _________________________________ Custom _______________________________ -->
 
-	<assets path='art/icons/iconOG.png' rename='icon.png' if="linux" />
+	<assets path='art/icons/iconOG.png' rename='icon.png' if="linux || mac" />
 	
 	<icon path="art/icons/icon16.png" size='16'/>
 	<icon path="art/icons/icon32.png" size='32'/>
