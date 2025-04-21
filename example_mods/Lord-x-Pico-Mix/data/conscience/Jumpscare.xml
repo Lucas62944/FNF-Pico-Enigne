@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="Jumpscare.png">
+<SubTexture name="Jumpscare idle0000" x="0" y="0" width="2184" height="3003" frameX="-1939" frameY="-504" frameWidth="5040" frameHeight="4200" />
+<SubTexture name="Jumpscare idle0001" x="2184" y="0" width="2205" height="3003" frameX="-1939" frameY="-504" frameWidth="5040" frameHeight="4200" />
+<SubTexture name="Jumpscare idle0002" x="4389" y="0" width="2317" height="3003" frameX="-1939" frameY="-504" frameWidth="5040" frameHeight="4200" />
+<SubTexture name="Jumpscare idle0003" x="0" y="3003" width="2317" height="3003" frameX="-1939" frameY="-504" frameWidth="5040" frameHeight="4200" />
+<SubTexture name="Jumpscare idle0004" x="2317" y="3003" width="2317" height="3003" frameX="-1939" frameY="-504" frameWidth="5040" frameHeight="4200" />
+</TextureAtlas>

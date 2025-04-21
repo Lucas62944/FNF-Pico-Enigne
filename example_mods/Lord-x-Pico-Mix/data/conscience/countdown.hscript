@@ -1,0 +1,53 @@
+var swagCounter = 0;
+var amongus = 0;
+	var previousFrameTime = 0;
+	var lastReportedPlayheadPosition = 0;
+	var songTime = 0;
+var countdownPath = "mods/scripts/newcredits/";
+var credits;
+var time = 2.5;
+function start(song)
+{
+time = 2.8;
+if (FNFAssets.exists(countdownPath + curSong + ".png"))
+   {
+   credits = new FlxSprite(0,0).loadGraphic(countdownPath + curSong + ".png");
+   } else {
+   credits = new FlxSprite(0,0).loadGraphic(countdownPath + "placeholder" + ".png");
+   }
+credits.cameras = [camHUD];
+credits.setGraphicSize(FlxG.width, FlxG.height);
+credits.screenCenter();
+credits.x -= 800;
+credits.y += 80;
+add(credits);
+
+ 
+                                        new FlxTimer().start(time, function(tmr)
+					{
+						FlxTween.tween(credits, {x: credits.x + 800}, 1, {ease: FlxEase.expoInOut});
+					});
+                                        new FlxTimer().start(time + 4.5, function(tmr)
+					{
+						FlxTween.tween(credits, {x: credits.x - 800}, 1, {ease: FlxEase.expoInOut});
+					});
+	
+                if (currentPlayState.duoMode)
+		{
+			controls.setKeyboardScheme(Duo(true));
+		}
+		Conductor.songPosition = 0;
+		Conductor.songPosition -= Conductor.crochet * 5;
+			if (!PlayState.duoMode || PlayState.opponentPlayer)
+				dad.dance();
+			if (PlayState.opponentPlayer)
+				boyfriend.dance();
+			gf.dance();
+}
+
+
+
+function update(elapsed)
+{
+
+}

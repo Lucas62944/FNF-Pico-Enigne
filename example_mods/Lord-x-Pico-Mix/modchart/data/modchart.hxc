@@ -1,0 +1,645 @@
+var isMiddlescroll = false;
+var isRegenerating = false;
+var isBopping = false;
+var noteBopping = false;
+var firstTime = true;
+var camBopping = false;
+var camFirst = true;
+var isBlue = false;
+var backdrop;
+var backdrop2;
+var sussyAngle2;
+var thotY;
+var windowMoving = false;
+var notepadOpenin = false;
+var windowUpNDown = false;
+var notepadOpeninSections = false;
+var isBackdrop1 = true;
+var oldWindowX = 320;
+var oldWindowY = 200;
+var content = "HELLO" + currentPlayState.windowsUser;
+var vintage;
+var windowLeftNRight = false;
+var modchartPath = "mods/modchart/data/conscience/";
+function start(song)
+{
+dad.visible = true;
+currentPlayState.customGameOver = true;
+WindowsData.setWindowColorMode(1);
+gf.alpha = 0;
+addCustomShaderToCam('camhud', 'chromatic');
+addCustomShaderToCam('', 'chromatic');
+    blue = new FlxSprite(0,0).loadGraphic(modchartPath + 'blue.png');
+    blue.scale.x = 5;
+    blue.y += 400;
+    blue.alpha = 0.001;
+    addSprite(blue, BEHIND_ALL);
+    backdrop4 = new FlxBackdrop(FNFAssets.getBitmapData('mods/data/conscience/greenhill.png'), 0.3, 0.3, true, true, 0, 0);
+    backdrop4.antialiasing = false;
+    backdrop4.velocity.set(500, 0);
+    backdrop4.scale.set(5,5);
+    backdrop4.useScaleHack = true;
+    backdrop4.alpha = 0.001;
+    backdrop4.y -= 1400;
+    addSprite(backdrop4, BEHIND_ALL);
+    backdrop = new FlxBackdrop(FNFAssets.getBitmapData('mods/data/conscience/text1.png'), 0.3, 0.3, true, true, 0, 100);
+    backdrop.antialiasing = false;
+    backdrop.velocity.set(500, 0);
+    backdrop.useScaleHack = true;
+    backdrop.alpha = 0.001;
+    backdrop.y += 200;
+    addSprite(backdrop, BEHIND_ALL);
+    backdrop2 = new FlxBackdrop(FNFAssets.getBitmapData('mods/data/conscience/text2.png'), 0.3, 0.3, true, true, 0, 100);
+    backdrop2.antialiasing = false;
+    backdrop2.velocity.set(-500, 0);
+    backdrop2.useScaleHack = true;
+    backdrop2.alpha = 0.001;
+    backdrop2.y += 250;
+    addSprite(backdrop2, BEHIND_ALL);
+    backdrop3 = new FlxBackdrop(FNFAssets.getBitmapData('mods/data/conscience/text3.png'), 0.3, 0.3, true, true, 0, 100);
+    backdrop3.antialiasing = false;
+    backdrop3.velocity.set(-500, 0);
+    backdrop3.useScaleHack = true;
+    backdrop3.alpha = 0.001;
+    backdrop3.y += 300;
+    addSprite(backdrop3, BEHIND_ALL);
+    transparent = new FlxSprite(-600, -200).loadGraphic("mods/data/transparency.png");
+    transparent.scale.set(5,5);
+    transparent.alpha = 0.001;
+    addSprite(transparent, BEHIND_ALL);
+void = new Character(dad.x + 350, dad.y + 235, 'voidx');
+void.alpha = 0.001;
+addSprite(void);
+boyfriend.alpha = 0.001;
+FlxG.camera.y += 900;
+FlxG.camera.alpha = 0;
+    bar1 = new FlxSprite(-600, -200).loadGraphic(modchartPath + 'black2.png');
+    bar1.screenCenter();
+    bar1.scrollFactor.set(0, 0);	
+    bar2 = new FlxSprite(-600, -200).loadGraphic(modchartPath + 'black2.png');
+    bar2.screenCenter();
+    bar2.scrollFactor.set(0, 0);
+    bar2.flipY = true;	
+    bar2.alpha = 1;
+    bar1.alpha = 1;
+    bar1.y -= 200;
+    bar2.y += 200;
+    bar1.cameras = [camHUD];
+    bar2.cameras = [camHUD];
+    addSprite(bar1);
+    addSprite(bar2);
+    vintage = new FlxSprite(0,0);
+    var tex = FlxAtlasFrames.fromSparrow(modchartPath + 'vintage.png', modchartPath + 'vintage.xml');
+    vintage.frames = tex;
+    vintage.animation.addByPrefix("idle", "idle", 16, true);
+    vintage.scale.set(3, 3);
+    vintage.animation.play("idle");
+    vintage.antialiasing = false;
+    vintage.alpha = 0;
+    vintage.cameras = [camHUD];
+    vintage.screenCenter();
+    addSprite(vintage);
+    jumpscare = new FlxSprite(0,0);
+    var tex = FlxAtlasFrames.fromSparrow(modchartPath + 'Jumpscare.png', modchartPath + 'Jumpscare.xml');
+    jumpscare.frames = tex;
+    jumpscare.animation.addByPrefix("idle", "Jumpscare idle", 12, false);
+    jumpscare.scale.set(0.28, 0.28);
+    jumpscare.animation.play("idle");
+    jumpscare.antialiasing = false;
+    jumpscare.alpha = 0.001;
+    jumpscare.cameras = [camHUD];
+    jumpscare.screenCenter();
+    jumpscare.x -= 150;
+    jumpscare.y += 30;
+    addSprite(jumpscare);
+	helloTxt = new FlxText(0, 0, FlxG.width - 800, "HELLO", 32);
+        helloTxt.text = "HELLO";
+	helloTxt.font = "mods/fonts/sonic-1-2-game-over.ttf";
+	helloTxt.alignment = 'center';
+	helloTxt.borderStyle = currentPlayState.scoreTxt.borderStyle;
+	helloTxt.borderColor = 0xFF0000FF;
+	helloTxt.scrollFactor.set();
+	helloTxt.borderSize = 1.25;
+        helloTxt.size = 50;
+        helloTxt.screenCenter();
+	helloTxt.cameras = [camHUD];
+        helloTxt.color = 0xFFFFFFFF;
+	addSprite(helloTxt);
+	helloTxt2 = new FlxText(0, 0, FlxG.width - 800, "HELLO", 32);
+        helloTxt2.text = windowsUser.toUpperCase();
+if (ClientPrefs.selfAware == false)
+   {
+   helloTxt2.text = "PLAYER";
+   } else {
+   helloTxt2.text = windowsUser.toUpperCase();
+   }
+// watchin out for all my trans/non-binary homies out there
+	helloTxt2.font = "mods/fonts/sonic-1-2-game-over.ttf";
+	helloTxt2.alignment = 'center';
+	helloTxt2.borderStyle = currentPlayState.scoreTxt.borderStyle;
+	helloTxt2.borderColor = 0xFF0000FF;
+	helloTxt2.scrollFactor.set();
+	helloTxt2.borderSize = 1.25;
+        helloTxt2.size = 50;
+        helloTxt2.screenCenter();
+        helloTxt2.y += 50;
+	helloTxt2.cameras = [camHUD];
+        helloTxt2.color = 0xFFFFFFFF;
+        helloTxt2.alpha = 0.001;
+        helloTxt.alpha = 0.001;
+	addSprite(helloTxt2);
+   FlxTween.tween(FlxG.camera, {y: 0}, 1.5, {ease: FlxEase.circInOut});
+   FlxTween.tween(FlxG.camera, {alpha: 1}, 3.5, {ease: FlxEase.sineInOut});
+   FlxG.camera.shake(0.01, 1.5);
+for (i in playerStrums)
+    {
+    i.y += 3000;
+    i.alpha = 0.001;
+if (ClientPrefs.downScroll)
+   {
+    FlxTween.tween(i, {y: FlxG.height - 165}, 1.5, {ease: FlxEase.circInOut});
+   } else {
+    FlxTween.tween(i, {y: 50}, 1.5, {ease: FlxEase.circInOut});
+   }
+    FlxTween.tween(i, {alpha: 1}, 2.5, {ease: FlxEase.circInOut});
+    }
+enemyStrums.forEach(function(spr)
+{
+spr.alpha = 0.001;
+});
+isMiddlescroll = true;
+                                        coolRegen = new FlxTimer().start(10, function(tmr)
+					{
+                                        isRegenerating = true;
+					});
+    glitch2 = new FlxSprite(0,0).loadGraphic('mods/data/conscience/blackreal.png');
+    glitch2.scrollFactor.set(0.1, 0.1);
+    glitch2.scale.set(5,5);
+    glitch2.cameras = [camHUD];
+    glitch2.alpha = 0;
+    glitch2.antialiasing = ClientPrefs.globalAntialiasing;
+    glitchEffect2 = new FlxGlitchEffect(4, 1, 0.01);
+    glitchSprite2 = new FlxEffectSprite(glitch2, [glitchEffect2]);
+    glitchSprite2.scrollFactor.set(1, 1);
+    glitchSprite2.scale.set(5,5);
+    glitchSprite2.cameras = [camHUD];
+    glitchSprite2.alpha = 0;
+    addSprite(glitchSprite2);
+    box2 = new FlxSprite(0,0).loadGraphic(modchartPath + 'hedgehog.png');
+    box2.screenCenter();
+    box2.cameras = [camHUD];
+    box2.setGraphicSize(FlxG.width, FlxG.height);
+    addSprite(box2);
+    FlxTween.tween(box2, {alpha: 0}, 1.5, {ease: FlxEase.circInOut});
+    FlxTween.tween(box2, {y: 900}, 1.5, {ease: FlxEase.circInOut});
+    box = new FlxSprite(0,0).loadGraphic(modchartPath + 'box.png');
+    box.screenCenter();
+    box.cameras = [camHUD];
+    box.setGraphicSize(FlxG.width, FlxG.height);
+    addSprite(box);
+    FlxTween.tween(box.scale, {y: 50}, 4.5, {ease: FlxEase.circInOut});
+    FlxTween.tween(box.scale, {x: 50}, 4.5, {ease: FlxEase.circInOut});
+							playerStrums.forEach(function(spr)
+if (!ClientPrefs.middleScroll)
+   {						{
+spr.x -= 322;
+spr.y -= 35;
+   }
+spr.alpha = 0.001;
+							});
+window.borderless = false;
+    transparent2 = new FlxSprite(-600, -200).loadGraphic("mods/data/transparency.png");
+    transparent2.scale.set(5,5);
+    transparent2.alpha = 0.001;
+    addSprite(transparent2);
+window.x = 320;
+window.y = 200;
+boyfriend.visible = false;
+addVCREffect("camgame", null, 0.01, true, true, true);
+Main.fpsVar.alpha = 1;
+}
+
+function beatHit(beat)
+{
+if (isBopping == true)
+   {
+   camHUD.zoom = 1.1;
+   FlxG.camera.zoom += 0.05;
+   }
+if (isBlue == true)
+   {
+   blue.alpha = 1;
+   backdrop.alpha = 1;
+   backdrop2.alpha = 1;
+   backdrop3.alpha = 1;
+   isBackdrop1 = !isBackdrop1;
+   }
+}
+
+var sussyAngle = 0;
+var windowreal = true;
+var windowrealU = true;
+function dothing()
+{
+if (windowMoving == true || void.alpha == 1)
+   {
+   if (windowreal == true)
+      {
+      windowreal = false;
+      } else {
+      windowreal = true;
+      }
+   }
+}
+
+function dothingU()
+{
+if (windowUpNDown == true)
+   {
+   if (windowrealU == true)
+      {
+      windowrealU = false;
+      } else {
+      windowrealU = true;
+      }
+   }
+}
+
+function update(elapsed)
+{
+if (!PlayState.SONG.notes[PlayState.curSection].mustHitSection)
+   {
+if (notepadOpeninSections == true)
+   {
+if (FlxG.random.bool(0.15))
+   {
+   window.focus();
+   //Sys.command("start Notepad" + " " + "mods/data/conscience/LordXText/" + FlxG.random.int(0,3) + ".txt");
+   trace("opened notepad");
+   currentPlayState.openConscienceNotepadWindow();
+   }
+   }
+   }
+if (void.alpha == 0.001)
+   {
+   triggerEventNote("Camera Follow Pos", dad.cameraPosition[0] + 330, dad.cameraPosition[1] - 40);
+   } else {
+   triggerEventNote("Camera Follow Pos", void.cameraPosition[0] + 650, void.cameraPosition[1] + 250);
+   }
+if (isBlue == true)
+   {
+   blue.alpha -= 0.07;
+if (isBackdrop1)
+   {
+      backdrop.alpha -= 0.07;
+      backdrop3.alpha -= 0.07;
+   } else {
+   backdrop2.alpha -= 0.07;
+   }
+   }
+window.focus();
+FlxG.autoPause = false;
+if (windowMoving == true)
+   {
+   if (window.x == 320 && windowreal == true)
+      {
+      FlxTween.tween(window, {x: 20}, 0.6, {ease: FlxEase.cubeOut});
+      FlxTween.tween(window, {y: 150}, 0.6, {ease: FlxEase.cubeOut});
+      }   
+   if (window.x == 20)
+      {
+      FlxTween.tween(window, {x: 320}, 0.6, {ease: FlxEase.cubeOut, onComplete: dothing});
+      FlxTween.tween(window, {y: 200}, 0.6, {ease: FlxEase.cubeOut});
+      } 
+   if (window.x == 320 && windowreal == false)
+      {
+      FlxTween.tween(window, {x: 620}, 0.6, {ease: FlxEase.cubeOut});
+      FlxTween.tween(window, {y: 250}, 0.6, {ease: FlxEase.cubeOut});
+      }   
+   if (window.x == 620)
+      {
+      FlxTween.tween(window, {x: 320}, 0.6, {ease: FlxEase.cubeOut, onComplete: dothing});
+      FlxTween.tween(window, {y: 200}, 0.6, {ease: FlxEase.cubeOut});
+      }      
+   }
+if (windowUpNDown == true)
+   {
+   if (window.y == 200 && windowrealU == true)
+      {
+      FlxTween.tween(window, {y: 150}, 1, {ease: FlxEase.cubeOut});
+      }   
+   if (window.y == 150)
+      {
+      FlxTween.tween(window, {y: 200}, 1, {ease: FlxEase.cubeOut, onComplete: dothingU});
+      } 
+   if (window.y == 200 && windowrealU == false)
+      {
+      FlxTween.tween(window, {y: 250}, 1, {ease: FlxEase.cubeOut});
+      }   
+   if (window.y == 250)
+      {
+      FlxTween.tween(window, {y: 200}, 1, {ease: FlxEase.cubeOut, onComplete: dothingU});
+      }      
+   }
+if (windowLeftNRight == true)
+   {
+   if (window.x == 320 && windowreal == true)
+      {
+      FlxTween.tween(window, {x: 20}, 0.6, {ease: FlxEase.cubeOut});
+      }   
+   if (window.x == 20)
+      {
+      FlxTween.tween(window, {x: 320}, 0.6, {ease: FlxEase.cubeOut, onComplete: dothing});
+      } 
+   if (window.x == 320 && windowreal == false)
+      {
+      FlxTween.tween(window, {x: 620}, 0.6, {ease: FlxEase.cubeOut});
+      }   
+   if (window.x == 620)
+      {
+      FlxTween.tween(window, {x: 320}, 0.6, {ease: FlxEase.cubeOut, onComplete: dothing});
+      }      
+   }
+if (glitchSprite2.alpha == 1)
+   {
+   // isRegenerating = true;
+   }
+if (isMiddlescroll == true)
+   {
+   currentPlayState.notes.forEachAlive(function (daNote)
+      {
+      if (daNote.mustPress == false)
+         {
+         daNote.alpha = 0.25;
+         }
+      });
+   }
+if (isRegenerating == true)
+   {
+   glitchSprite2.alpha -= 0.001;
+   glitch2.alpha -= 0.001;
+   }
+}
+
+function stepHit(step)
+{
+if (step == 1)
+   {
+							playerStrums.forEach(function(spr)
+							{
+          FlxTween.tween(spr, {alpha: 1}, 0.5, {ease: FlxEase.cubeOut});
+          FlxTween.tween(spr, {alpha: 1}, 0.5, {ease: FlxEase.cubeOut});
+							});
+      for (i in enemyStrums)
+          {
+          // FlxTween.tween(i, {x: i.x - 340}, 0.5, {ease: FlxEase.cubeOut});
+          FlxTween.tween(i, {alpha: 0.25}, 0.5, {ease: FlxEase.cubeOut});
+if (!ClientPrefs.middleScroll)
+   {
+          FlxTween.tween(getHaxeActor(2), {x: getHaxeActor(2).x + 680}, 0.5, {ease: FlxEase.cubeOut});
+          FlxTween.tween(getHaxeActor(3), {x: getHaxeActor(3).x + 680}, 0.5, {ease: FlxEase.cubeOut});
+   }
+          }
+   }
+if (step == 128 || step == 192 || step == 680 || step == 744 || step == 680 || step == 808 || step == 936 || step == 1528 || step == 1592 || step == 1656 || step == 1720)
+   {
+   isRegenerating = false;
+         FlxTween.tween(FlxG.camera, {zoom: 1.4}, 0.5, {ease: FlxEase.sineInOut, onComplete: camlock});
+      FlxTween.tween(bar1, {y: bar1.y + 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar1, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {y: bar2.y - 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});	
+   }
+if (step == 160 || step == 224 || step == 288 || step == 352 || step == 712 || step == 776 || step == 872 || step == 1000 || step == 1560 || step == 1624 || step == 1688 || step == 1752)
+   {
+          FlxTween.tween(FlxG.camera, {zoom: 0.9}, 0.5, {ease: FlxEase.sineInOut, onComplete: camlock});
+      FlxTween.tween(bar1, {y: bar1.y - 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar1, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {y: bar2.y + 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});	
+   }
+if (step == 256 || step == 320 || step == 808 || step == 936 || step == 1656)
+   {
+   FlxG.camera.fade(0x0000FF, 2.5, true);
+   camHUD.zoom = 1.4;
+   isBopping = true;
+   }
+if (step == 368)
+   {
+          FlxTween.tween(FlxG.camera, {alpha: 0}, 0.5, {ease: FlxEase.sineInOut});
+          FlxTween.tween(glitchSprite2, {alpha: 1}, 4, {ease: FlxEase.cubeOut});
+          FlxTween.tween(glitch2, {alpha: 1}, 4, {ease: FlxEase.cubeOut});
+          FlxTween.tween(window, {y: 1700}, 2.5, {ease: FlxEase.circInOut});
+   }
+if (step == 424)
+   {
+   glitchSprite2.alpha = 0.001;
+   glitch2.alpha = 0.001;
+   FlxG.camera.alpha = 1;
+   FlxG.camera.fade(0x0000FF, 2.5, true);
+   backdrop.alpha = 1;
+   backdrop2.alpha = 1;
+   backdrop3.alpha = 1;
+   isBlue = true;
+  window.borderless = true;
+  windowMoving = true;
+   window.y -= 1500;
+  notepadOpeninSections = true;
+   }
+if (step == 240 || step == 248)
+   {
+   camHUD.zoom = 1.2;
+   FlxG.camera.zoom += 0.05;
+   }
+if (step == 256 || step == 320)
+   {
+   FlxG.camera.fade(0x0000FF, 2.5, true);
+   camHUD.zoom = 1.4;
+   isBopping = true;
+   FlxTween.tween(FlxG.camera, {zoom: 0.7}, 1.5, {ease: FlxEase.sineInOut, onComplete: camlock});
+      FlxTween.tween(bar1, {y: bar1.y + 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar1, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {y: bar2.y - 180}, 0.5, {ease: FlxEase.circInOut});
+      FlxTween.tween(bar2, {alpha: 1}, 0.5, {ease: FlxEase.circInOut});	
+   }
+if (step == 1064)
+   {
+   notepadOpeninSections = false;
+   isBlue = false;
+   windowMoving = false;
+   camBopping = false;
+   FlxTween.tween(dad, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(blue, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(backdrop, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(backdrop2, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(backdrop3, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(camHUD, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   } 
+if (step == 1128)
+   {
+   FlxTween.tween(blue, {alpha: 1}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(window, {x: oldWindowX}, 1.5, {ease: FlxEase.sineInOut});
+   FlxTween.tween(window, {y: oldWindowY}, 1.5, {ease: FlxEase.sineInOut});
+   }  
+if (step == 1252)
+   {
+   FlxTween.tween(blue, {alpha: 0}, 1.5, {ease: FlxEase.sineInOut});
+   }  
+if (step == 1256)
+   {
+   dad.alpha = 1;
+   camHUD.alpha = 1;
+   FlxG.camera.y = 0;
+   FlxG.camera.fade(0x0000FF, 1.5, true);
+   window.borderless = false;
+   windowUpNDown = true;
+   }
+if (step == 1384)
+   {
+   camBopping = true;
+   FlxG.camera.fade(0x0000FF, 1.5, true);
+   isBlue = true;
+   }  
+if (step == 1448)
+   {
+   camHUD.zoom = 1.55;
+   FlxG.camera.zoom += 0.08;
+   } 
+if (step == 1512)
+   {
+   windowUpNDown = false;
+   FlxTween.tween(dad, {alpha: 0}, 0.5, {ease: FlxEase.sineInOut});
+   } 
+if (step == 1528)
+   {
+   dad.alpha = 1;
+   FlxG.camera.fade(0x0000FF, 1.5, true);
+  windowMoving = true;
+  notepadOpeninSections = true;
+   }
+if (step == 1782)
+   {
+   notepadOpeninSections = false;
+   windowMoving = false;
+   FlxTween.tween(vintage, {alpha: 1}, 2.5, {ease: FlxEase.sineInOut});
+   }
+if (step == 1799)
+   {
+   FlxTween.tween(helloTxt, {alpha: 1}, 0.5, {ease: FlxEase.sineInOut});
+   }
+if (step == 1815)
+   {
+   jumpscare.animation.play("idle");
+   helloTxt2.alpha = 1;
+   FlxTween.tween(jumpscare, {alpha: 1}, 0.2, {ease: FlxEase.sineInOut});
+   FlxG.sound.play(FNFAssets.getSound('mods/sounds/teleport' + TitleState.soundExt), 0.5);
+   }
+if (step == 1528)
+   {
+   backdrop4.alpha = 1;
+   isBlue = false;
+   backdrop.alpha = 0.001;
+   backdrop2.alpha = 0.001;
+   backdrop3.alpha = 0.001;
+   }  
+if (step == 1824)
+   {
+   Main.fpsVar.alpha = 0;
+   jumpscare.alpha = 0.001;
+							for (i in enemyStrums)
+							{
+          FlxTween.tween(i, {alpha: 0}, 0.5, {ease: FlxEase.cubeOut});
+          FlxTween.tween(i, {x: 2000}, 0.5, {ease: FlxEase.cubeOut});
+							}
+   currentPlayState.scoreTxt.alpha = 0;
+   currentPlayState.iconP1.alpha = 0;
+   currentPlayState.iconP2.alpha = 0;
+   currentPlayState.healthBar.alpha = 0;
+   currentPlayState.healthBarBG.alpha = 0;
+   currentPlayState.botplayTxt.visible = false;
+   currentPlayState.timeBar.alpha = 0;
+   currentPlayState.timeBarBG.alpha = 0;
+   currentPlayState.timeTxt.alpha = 0;
+   vintage.y = 6000;
+   vintage.visible = false;
+   vintage.alpha = 0;
+   currentPlayState.clearShaderFromCamera("camgame");
+   currentPlayState.clearShaderFromCamera("camhud");
+   window.borderless = true;
+   helloTxt.alpha = 0;
+   helloTxt2.alpha = 0;
+   transparent.alpha = 1;
+   FlxTransWindow.getWindowsTransparent();
+   FlxG.camera.fade(0xFF0000, 0.5, true);
+   dad.alpha = 0.001;
+   backdrop4.alpha = 0.001;
+   void.alpha = 1;
+   currentPlayState.dad = void;
+   windowLeftNRight = true;
+   iconP2.changeIcon("voidx");
+   } 
+if (step == 2208 || step == 2212 || step == 2216 || step == 2220)
+   {
+   windowLeftNRight = false;
+   FlxTween.tween(window, {y: window.y + 400}, 0.5, {ease: FlxEase.sineInOut});
+   }
+if (step == 2397)
+   {
+   window.borderless = false;
+   transparent.alpha = 0;
+   void.alpha = 0;
+   camHUD.alpha = 0;
+   FlxTween.tween(window, {y: 200}, 1.5, {ease: FlxEase.sineInOut});
+   }
+if (step == 2528)
+   {
+   window.title = "THIS ISN'T OVER.";
+   }
+if (step == 2568)
+   {
+   Main.fpsVar.alpha = 1;
+   window.title = "Lord X Wrath";
+   window.alert("I WILL BE BACK.", "Error");
+   }
+}
+
+function playerOneMiss()
+{
+coolRegen.reset();
+glitchSprite2.alpha += 0.1;
+glitch2.alpha += 0.1;
+isRegenerating = false;
+}
+
+function playerOneSing()
+{
+
+}
+
+function playerTwoSing()
+{
+
+}
+
+function playerOneTurn()
+{
+window.x = FlxG.random.int(0, 1030);
+if (notepadOpeninSections == true)
+   {
+   notepadOpenin = false;
+   }
+}
+
+function playerTwoTurn()
+{
+window.x = FlxG.random.int(0, 1030);
+if (notepadOpeninSections == true)
+   {
+   notepadOpenin = true;
+   }
+}
+
+function camlock()
+{
+setDefaultZoom(FlxG.camera.zoom);
+}
