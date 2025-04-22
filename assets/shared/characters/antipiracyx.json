@@ -1,0 +1,55 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "X_Idle instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-1, -132],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Piracy-X_Down instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, -59],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Piracy-X_Left instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 228],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Piracy-X_Up instance 1",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, -38],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Piracy_X_Right instance 1",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "Lord-X/character/AntiPiracyX",
+	"position": [-530, -310],
+	"healthicon": "piracyx",
+	"flip_x": false,
+	"healthbar_colors": [3, 0, 110],
+	"camera_position": [-150, 170],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}

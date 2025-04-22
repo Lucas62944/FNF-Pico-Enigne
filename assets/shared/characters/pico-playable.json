@@ -1,0 +1,143 @@
+{
+	"animations": [
+		{
+			"offsets": [3, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Pico Idle Dance"
+		},
+		{
+			"offsets": [21, 27],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "pico Up note0"
+		},
+		{
+			"offsets": [84, -80],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Pico Down Note0"
+		},
+		{
+			"offsets": [80, -38],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"indices": [],
+			"name": "Pico Down Note MISS"
+		},
+		{
+			"offsets": [28, 67],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"indices": [],
+			"name": "pico Up note miss"
+		},
+		{
+			"loop": false,
+			"offsets": [-48, 2],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pico Note Right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [85, -10],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pico NOTE LEFT0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-45, 50],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "Pico Note Right Miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [83, 28],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "Pico NOTE LEFT miss",
+			"indices": []
+		},
+		{
+			"offsets": [113, 121],
+			"indices": [],
+			"fps": 24,
+			"anim": "singUP-alt",
+			"loop": false,
+			"name": "up-alt"
+		},
+		{
+			"offsets": [128, -126],
+			"indices": [],
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"loop": false,
+			"name": "down-alt"
+		},
+		{
+			"offsets": [27, -35],
+			"indices": [],
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"loop": false,
+			"name": "alt-left"
+		},
+		{
+			"offsets": [50, 9],
+			"indices": [],
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"loop": false,
+			"name": "alt-right"
+		},
+		{
+			"offsets": [39, -1],
+			"indices": [],
+			"fps": 24,
+			"anim": "burpSmile",
+			"loop": false,
+			"name": "burpsmile"
+		},
+		{
+			"offsets": [-3, 1],
+			"indices": [],
+			"fps": 24,
+			"anim": "shit",
+			"loop": false,
+			"name": "shit"
+		},
+		{
+			"offsets": [33, 2],
+			"indices": [],
+			"fps": 24,
+			"anim": "burpshit",
+			"loop": false,
+			"name": "burpshit"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Pico_FNF_assetss, characters/Pico/ALT-Animations/pico alt anims, characters/Pico/Animations/Pico-Animis/Pico_Burps",
+	"position": [0, 300],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [183, 216, 85],
+	"camera_position": [200, 40],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

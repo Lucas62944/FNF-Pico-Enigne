@@ -1,0 +1,103 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"indices": [],
+			"name": "Nene Idle0"
+		},
+		{
+			"offsets": [23, 3],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"indices": [],
+			"name": "Nene Left0"
+		},
+		{
+			"offsets": [-81, -60],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"indices": [],
+			"name": "Nene Down0"
+		},
+		{
+			"offsets": [-51, 83],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"indices": [],
+			"name": "Nene Up0"
+		},
+		{
+			"offsets": [-26, -6],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"indices": [],
+			"name": "Nene Right0"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle-alt",
+			"indices": [],
+			"name": "Nene Idle sparkle"
+		},
+		{
+			"offsets": [23, 3],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT-alt",
+			"indices": [],
+			"name": "Nene Left sparkle"
+		},
+		{
+			"offsets": [-81, -60],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN-alt",
+			"indices": [],
+			"name": "Nene Down sparkle"
+		},
+		{
+			"offsets": [-51, 83],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP-alt",
+			"indices": [],
+			"name": "Nene Up sparkle"
+		},
+		{
+			"offsets": [-26, -6],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT-alt",
+			"indices": [],
+			"name": "Nene Right sparkle"
+		},
+		{
+			"offsets": [138, 69],
+			"loop": false,
+			"fps": 24,
+			"anim": "Bubble Pop",
+			"indices": [],
+			"name": "Nene Bubble Pop"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Nene NGR",
+	"position": [-110, 280],
+	"healthicon": "nene",
+	"flip_x": false,
+	"healthbar_colors": [195, 106, 165],
+	"camera_position": [-100, -20],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": false
+}
