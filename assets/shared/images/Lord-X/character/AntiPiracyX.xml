@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Piracy-X.png">
+	<!-- Created with Adobe Animate version 23.0.0.407 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Piracy-X_Down instance 10000" x="0" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10001" x="1211" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10002" x="2422" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10003" x="3633" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10004" x="4844" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10005" x="6055" y="0" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10006" x="0" y="723" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10007" x="1211" y="723" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Down instance 10008" x="2422" y="723" width="1211" height="723"/>
+	<SubTexture name="Piracy-X_Left instance 10000" x="3633" y="723" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10001" x="4844" y="723" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10002" x="6055" y="723" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10003" x="0" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10004" x="1211" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10005" x="2422" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10006" x="3633" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10007" x="4844" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Left instance 10008" x="6055" y="1519" width="1211" height="796"/>
+	<SubTexture name="Piracy-X_Up instance 10000" x="0" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10001" x="1211" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10002" x="2422" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10003" x="3633" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10004" x="4844" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10005" x="6055" y="2315" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10006" x="0" y="3398" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10007" x="1211" y="3398" width="1211" height="1083"/>
+	<SubTexture name="Piracy-X_Up instance 10008" x="2422" y="3398" width="1211" height="1083"/>
+	<SubTexture name="Piracy_X_Right instance 10000" x="3633" y="3398" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10001" x="4844" y="3398" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10002" x="6055" y="3398" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10003" x="0" y="4481" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10004" x="1211" y="4481" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10005" x="2422" y="4481" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10006" x="3633" y="4481" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10007" x="4844" y="4481" width="1211" height="818"/>
+	<SubTexture name="Piracy_X_Right instance 10008" x="6055" y="4481" width="1211" height="818"/>
+	<SubTexture name="X_Idle instance 10000" x="0" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10001" x="1212" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10002" x="2424" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10003" x="3636" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10004" x="4848" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10005" x="6060" y="5299" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10006" x="0" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10007" x="1212" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10008" x="2424" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10009" x="3636" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10010" x="4848" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10011" x="4848" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10012" x="4848" y="6154" width="1212" height="855"/>
+	<SubTexture name="X_Idle instance 10013" x="4848" y="6154" width="1212" height="855"/>
+</TextureAtlas>
