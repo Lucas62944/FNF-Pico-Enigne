@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="picoSG.png">
+<SubTexture name="Pico Dodge0000" x="0" y="2987" width="535" height="454" frameX="0" frameY="0" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0001" x="535" y="2987" width="535" height="450" frameX="0" frameY="-4" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0002" x="1070" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0003" x="2678" y="2987" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0004" x="1606" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0005" x="3654" y="0" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0006" x="2142" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0007" x="3654" y="446" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0008" x="1070" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0009" x="2678" y="2987" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0010" x="1606" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0011" x="3654" y="0" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0012" x="2142" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0013" x="3654" y="446" width="536" height="446" frameX="-2" frameY="-8" frameWidth="538" frameHeight="455" />
+<SubTexture name="Pico Dodge0014" x="1070" y="2987" width="536" height="448" frameX="-2" frameY="-6" frameWidth="538" frameHeight="455" />
