@@ -14,6 +14,12 @@ class GameplaySettingsSubState extends BaseOptionsMenu
 			BOOL); //Variable type
 		addOption(option);
 
+		var option:Option = new Option('HealthBar Display', //Name
+			'If unchecked, the players health will not be displayed.', //Description
+			'healthBar', //Save data variable name
+			BOOL); //Variable type
+		addOption(option);
+
 		var option:Option = new Option('Middlescroll',
 			'If checked, your notes get centered.',
 			'middleScroll',
