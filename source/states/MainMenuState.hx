@@ -255,7 +255,7 @@ class MainMenuState extends MusicBeatState
 
             if (controls.ACCEPT || (FlxG.mouse.justPressed && allowMouse))
             {
-                FlxG.sound.play(Paths.sound('confirmMenu'));
+                FlxG.sound.play(Paths.sound('Engine-sounds/ConfirmEngine'));
                 selectedSomethin = true;
                 FlxG.mouse.visible = false;
 
