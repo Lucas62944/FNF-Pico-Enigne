@@ -1,11 +1,11 @@
 package states;
 
-import lucas.stages.EventLoader;
 import backend.Highscore;
 import backend.StageData;
 import backend.WeekData;
 import backend.Song;
 import backend.Rating;
+import engine.stages.EventLoader;
 
 import flixel.FlxBasic;
 import flixel.FlxObject;
@@ -431,11 +431,6 @@ class PlayState extends MusicBeatState
 				if(file.toLowerCase().endsWith('.hx'))
 					initHScript(folder + file);
 				#end
-
-				#if HAXE_ALLOWED
-				if(file.toLowerCase().endsWith('.hxc'))
-					initHScript(folder + file);
-				#end
 			}
 		#end
 			
@@ -452,11 +447,10 @@ class PlayState extends MusicBeatState
 				gf.visible = false;
 		}
 		
-		#if (LUA_ALLOWED || HSCRIPT_ALLOWED || HAXE_ALLOWED)
+		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
 		// STAGE SCRIPTS
-		#if LUA_ALLOWED startLuasNamed('stages/' + curStage + '.lua'); #end
-		#if HSCRIPT_ALLOWED startHScriptsNamed('stages/' + curStage + '.hx'); #end
-		#if HAXE_ALLOWED startHScriptsNamed('stages/' + curStage + '.hxc'); #end
+		#if LUA_ALLOWED startLuasNamed('scripts/data/stages/' + curStage + '.lua'); #end
+		#if HSCRIPT_ALLOWED startHScriptsNamed('scripts/HX-Format/stages/' + curStage + '.hx'); #end
 
 		// CHARACTER SCRIPTS
 		if(gf != null) startCharacterScripts(gf.curCharacter);
@@ -492,7 +486,7 @@ class PlayState extends MusicBeatState
 
 		noteGroup.add(strumLineNotes);
 
-		if(ClientPrefs.data.timeBarType == 'Display Name')
+		if(ClientPrefs.data.timeBarType == 'Song Name')
 		{
 			timeTxt.size = 24;
 			timeTxt.y += 3;
@@ -548,7 +542,7 @@ class PlayState extends MusicBeatState
 		scoreTxt.visible = !ClientPrefs.data.hideHud;
 		uiGroup.add(scoreTxt);
 
-		botplayTxt = new FlxText(400, healthBar.y - 90, FlxG.width - 800, Language.getPhrase("Lucas Sanches").toUpperCase(), 32);
+		botplayTxt = new FlxText(400, healthBar.y - 90, FlxG.width - 800, Language.getPhrase("Botplay").toUpperCase(), 32);
 		botplayTxt.setFormat(Paths.font("vcr.ttf"), 32, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		botplayTxt.scrollFactor.set();
 		botplayTxt.borderSize = 1.25;
@@ -576,26 +570,12 @@ class PlayState extends MusicBeatState
 		for (event in eventsPushed)
 			startHScriptsNamed('custom_events/' + event + '.hx');
 		#end
-
-		#if HAXE_ALLOWED
-		for (notetype in noteTypes)
-			startHScriptsNamed('custom_notetypes/' + notetype + '.hxc');
-		for (event in eventsPushed)
-			startHScriptsNamed('custom_events/' + event + '.hxc');
-		#end
-
-		#if MODCART_ALLOWED
-		for (event in eventsPushed)
-			// startMODcartNamed('modchart/data/' + modchart + '.hxc');
-		#end
-
 		noteTypes = null;
 		eventsPushed = null;
 
 		// SONG SPECIFIC SCRIPTS
-		#if (LUA_ALLOWED || HSCRIPT_ALLOWED || MODCART_ALLOWED || HAXE_ALLOWED)
-		#end
-		for (folder in Mods.directoriesWithFile(Paths.getSharedPath(), 'data/scripts/$songName/'))
+		#if (LUA_ALLOWED || HSCRIPT_ALLOWED)
+		for (folder in Mods.directoriesWithFile(Paths.getSharedPath(), 'scripts/songs/data/$songName/'))
 			for (file in FileSystem.readDirectory(folder))
 			{
 				#if LUA_ALLOWED
@@ -605,15 +585,6 @@ class PlayState extends MusicBeatState
 
 				#if HSCRIPT_ALLOWED
 				if(file.toLowerCase().endsWith('.hx'))
-					initHScript(folder + file);
-
-				#if MODCART_ALLOWED
-				if(file.toLowerCase().endsWith('.hxc'))
-					initHScript(folder + file);
-				#end
-
-				#if HAXE_ALLOWED
-				if(file.toLowerCase().endsWith('.hxc'))
 					initHScript(folder + file);
 				#end
 			}
@@ -768,7 +739,7 @@ class PlayState extends MusicBeatState
 		// Lua
 		#if LUA_ALLOWED
 		var doPush:Bool = false;
-		var luaFile:String = 'scripts/characters/$name.lua';
+		var luaFile:String = 'scripts/characters/data/$name.lua';
 		#if MODS_ALLOWED
 		var replacePath:String = Paths.modFolders(luaFile);
 		if(FileSystem.exists(replacePath))
@@ -804,7 +775,7 @@ class PlayState extends MusicBeatState
 		// HScript
 		#if HSCRIPT_ALLOWED
 		var doPush:Bool = false;
-		var scriptFile:String = 'characters/' + name + '.hx';
+		var scriptFile:String = 'scripts/characters/' + name + '.hx';
 		#if MODS_ALLOWED
 		var replacePath:String = Paths.modFolders(scriptFile);
 		if(FileSystem.exists(replacePath))
@@ -901,6 +872,12 @@ class PlayState extends MusicBeatState
 		#end
 		return null;
 	}
+
+	public function killPlayerInstantly():Void
+{
+    health = 500;
+    doDeathCheck(true); // true = força a morte
+}
 
 	function startAndEnd()
 	{
@@ -1170,7 +1147,7 @@ class PlayState extends MusicBeatState
 		}
 
 		var tempScore:String;
-		if(!instakillOnMiss) tempScore = Language.getPhrase('score_text', 'Score: {1} | Misses: {2} | Rating: {3}', [songScore, songMisses, str]);
+		if(!instakillOnMiss) tempScore = Language.getPhrase('score_text', 'Score: {1} | Rank: {2}', [songScore, str]);
 		else tempScore = Language.getPhrase('score_text_instakill', 'Score: {1} | Rating: {2}', [songScore, str]);
 		scoreTxt.text = tempScore;
 	}
@@ -1182,16 +1159,16 @@ class PlayState extends MusicBeatState
 		var bads:Int = ratingsData[2].hits;
 		var shits:Int = ratingsData[3].hits;
 
-		ratingFC = "";
+		ratingFC = "?";
 		if(songMisses == 0)
 		{
-			if (bads > 0 || shits > 0) ratingFC = 'FC';
-			else if (goods > 0) ratingFC = 'GFC';
-			else if (sicks > 0) ratingFC = 'SFC';
+			if (bads > 0 || shits > 0) ratingFC = '?';
+			else if (goods > 0) ratingFC = '?';
+			else if (sicks > 0) ratingFC = '?';
 		}
 		else {
-			if (songMisses < 10) ratingFC = 'SDCB';
-			else ratingFC = 'Clear';
+			if (songMisses < 2000) ratingFC = '?';
+			else ratingFC = '?';
 		}
 	}
 
@@ -3499,7 +3476,7 @@ class PlayState extends MusicBeatState
 		}
 	}
 
-	public var ratingName:String = '?';
+	public var ratingName:String = '[N/A]';
 	public var ratingPercent:Float;
 	public var ratingFC:String;
 	public function RecalculateRating(badHit:Bool = false, scoreBop:Bool = true) {
@@ -3511,7 +3488,7 @@ class PlayState extends MusicBeatState
 		var ret:Dynamic = callOnScripts('onRecalculateRating', null, true);
 		if(ret != LuaUtils.Function_Stop)
 		{
-			ratingName = '?';
+			ratingName = '[N/A]';
 			if(totalPlayed != 0) //Prevent divide by 0
 			{
 				// Rating Percent
