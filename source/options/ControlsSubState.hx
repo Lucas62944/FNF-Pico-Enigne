@@ -22,7 +22,8 @@ class ControlsSubState extends MusicBeatSubstate
 		[true, 'Down', 'note_down', 'Note Down'],
 		[true, 'Up', 'note_up', 'Note Up'],
 		[true, 'Right', 'note_right', 'Note Right'],
-		[true, 'dodge', 'dodge', 'dodge'],
+		[true, 'Mechanics'],
+		[true, 'dodge', 'space_dodge', 'Dodge-Control'],
 		[true],
 		[true, 'UI'],
 		[true, 'Left', 'ui_left', 'UI Left'],
@@ -40,7 +41,7 @@ class ControlsSubState extends MusicBeatSubstate
 		[false, 'Up', 'volume_up', 'Volume Up'],
 		[false, 'Down', 'volume_down', 'Volume Down'],
 		[false],
-		[false, 'DEBUG'],
+		[false, 'Open DEBUG Mode'],
 		[false, 'Key 1', 'debug_1', 'Debug Key #1'],
 		[false, 'Key 2', 'debug_2', 'Debug Key #2']
 	];
