@@ -3,7 +3,7 @@
 
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin-Pico Engine" file="Engine" packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.Pico-Enigne" main="Main" version="1.0.3" company="Lucas62944" />
+	<app title="Pico Engine" file="Engine" packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.Pico-Enigne" main="Main" version="1.0" company="Lucas62944" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -24,13 +24,12 @@
 	<define name="MODS_ALLOWED" if="desktop" />
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="LUA_ALLOWED" if="desktop" />
-	<define name="MODCART_ALLOWED" if="desktop" />
 	<define name="HAXE_ALLOWED" if="desktop" />
+	<define name="PYTHON_ALLOWE" if="desktop" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="DISCORD_ALLOWED" />
 	<define name="TRANSLATIONS_ALLOWED" />
 	<define name="IRIS_DEBUG"/>
-	<define name="CHECK_FOR_UPDATES"/>
 	
 	<define name="MULTITHREADED_LOADING" /> <!-- UNCOMMENTING THIS LINE WILL ENABLE MULTITHREADED LOADING, WHICH IMPROVES LOADING TIMES, BUT APPARENTLY CAN FREEZE THE GAME ON SONG LOAD IN OLDER PCs? -->
 	<define name="SHOW_LOADING_SCREEN" />
@@ -75,7 +74,9 @@
 	<!-- Assets -->
 	<assets path="assets/fonts" />
 	<assets path="assets/shared"        exclude="*.ogg" if="web"/>
+	<assets path="assets/shared/scripts"        exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"        exclude="*.mp3" unless="web"/>
+	<assets path="assets/modchart"        exclude="*.ogg" if="web"/>
 	<assets path="assets/embed"         exclude="*.ogg" if="web" embed="true"/>
 	<assets path="assets/embed"         exclude="*.mp3" unless="web" embed="true"/>
 	<assets path="assets/videos"        if="VIDEOS_ALLOWED"/>
