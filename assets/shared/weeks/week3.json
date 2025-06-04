@@ -1,0 +1,45 @@
+{
+	"storyName": "Your New Week",
+	"difficulties": "pico,noimix",
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"weekBefore": "tutorial",
+	"startUnlocked": true,
+	"hideStoryMode": true,
+	"songs": [
+		[
+			"pico",
+			"Week3/FreePlay/Pico-Pixel",
+			[
+				183,
+				216,
+				85
+			]
+		],
+		[
+			"philly-nice",
+			"Week3/FreePlay/Pico-Pixel",
+			[
+				183,
+				216,
+				85
+			]
+		],
+		[
+			"blammed",
+			"Week3/FreePlay/Pico-Pixel",
+			[
+				183,
+				216,
+				85
+			]
+		]
+	],
+	"weekCharacters": [
+		"",
+		"bf",
+		""
+	],
+	"hiddenUntilUnlocked": false,
+	"weekName": "Custom Week"
+}

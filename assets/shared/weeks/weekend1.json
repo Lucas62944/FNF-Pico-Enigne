@@ -1,0 +1,45 @@
+{
+	"songs": [
+		[
+			"darnell",
+			"WeekEnd1/FreePlay/Darnell-Pixel",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"lit-up",
+			"WeekEnd1/FreePlay/Darnell-Pixel",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"2hot",
+			"WeekEnd1/FreePlay/Darnell-Pixel",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "pico,nightmare,Tankman",
+	"weekCharacters": [
+		"",
+		"",
+		""
+	],
+	"storyName": "Your New Week",
+	"weekName": "Custom Week",
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}
