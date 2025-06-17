@@ -4,6 +4,7 @@ import flixel.FlxG;
 import openfl.text.TextField;
 import openfl.text.TextFormat;
 import openfl.system.System;
+import states.MainMenuState;
 
 /**
 	The FPS class provides an easy-to-use monitor to display
@@ -57,6 +58,7 @@ class FPSCounter extends TextField
 
 		currentFPS = times.length < FlxG.updateFramerate ? times.length : FlxG.updateFramerate;		
 		updateText();
+		text += '\nPico-Engine V${MainMenuState.picoEngineVersion}';
 		deltaTimeout = 0.0;
 	}
 
