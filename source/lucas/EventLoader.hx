@@ -4,11 +4,12 @@ import lucas.engine.stages.erect.*;
 import lucas.engine.stages.standard.*;
 import lucas.engine.stages.erect.spooky.*;
 import lucas.engine.stages.standard.corruption.*;
+import lucas.engine.unused.stages.*;
 import lucas.engine.objects.*;
+import lucas.engine.objects.capable.PicoCapableStage;
 import haxe.ds.List;
 import psychlua.FunkinLua;
 import states.MainMenuState;
-import lucas.engine.objects.capable.PicoCapableStage;
 
 class EventLoader extends BaseStage {
     #if LUA_ALLOWED
