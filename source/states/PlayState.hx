@@ -5,7 +5,6 @@ import backend.StageData;
 import backend.WeekData;
 import backend.Song;
 import backend.Rating;
-import lucas.EventLoader;
 
 import flixel.FlxBasic;
 import flixel.FlxObject;
@@ -55,6 +54,9 @@ import crowplexus.iris.Iris;
 import crowplexus.hscript.Expr.Error as IrisError;
 import crowplexus.hscript.Printer;
 #end
+
+// Lucas Settings Within The Mod
+import lucas.EventLoader;
 
 /**
  * This is where all the Gameplay stuff happens and is managed
