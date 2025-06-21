@@ -7,7 +7,7 @@ class CoolUtil
 {
 	public static function checkForUpdates(url:String = null):String {
 		if (url == null || url.length == 0)
-			url = "https://raw.githubusercontent.com/Lucas62944/FNF-Pico-Enigne/refs/heads/Main/gitVersion.txt";
+			url = "https://raw.githubusercontent.com/Lucas62944/FNF-Pico-Enigne/refs/heads/main/gitVersion.txt";
 		var version:String = states.MainMenuState.picoEngineVersion.trim();
 		if(ClientPrefs.data.checkForUpdates) {
 			trace('checking for updates...');
