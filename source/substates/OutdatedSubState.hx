@@ -48,7 +48,7 @@ class OutdatedSubState extends MusicBeatSubstate
 		if(!leftState) {
 			if (controls.ACCEPT) {
 				leftState = true;
-				CoolUtil.browserLoad("https://github.com/ShadowMario/FNF-PsychEngine/releases");
+				CoolUtil.browserLoad("https://github.com/Lucas62944/FNF-Pico-Enigne/releases");
 			}
 			else if(controls.BACK) {
 				leftState = true;
