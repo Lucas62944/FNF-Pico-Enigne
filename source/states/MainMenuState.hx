@@ -16,7 +16,8 @@ enum MainMenuColumn {
 
 class MainMenuState extends MusicBeatState
 {
-	public static var picoEngineVersion:String = '2.2H Demo'; // This is also used for Discord RPC
+    public static var picoEngineVersion:String = '2.3.0'; // This is also used for Discord RPC
+    public static var funkinVersion:String = '6.4.0'; // Version of funkin' we are emulationg
     public static var curSelected:Int = 0;
     public static var curColumn:MainMenuColumn = CENTER;
     var allowMouse:Bool = true; //Turn this off to block mouse movement in menus
@@ -94,15 +95,20 @@ class MainMenuState extends MusicBeatState
             rightItem.x -= rightItem.width;
         }
 
-        var picoVer:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pico Engine V" + picoEngineVersion, 12);
-    	picoVer.scrollFactor.set();
-        picoVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
-        add(picoVer);
+        var Pico:FlxText = new FlxText(12, FlxG.height - 44, 0, "Pico Engine V" + picoEngineVersion, 12);
+    	Pico.scrollFactor.set();
+        PicoVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.GREEN, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 
         var psychVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Psych V" + Application.current.meta.get('version'), 12);
         psychVer.scrollFactor.set();
-        psychVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+        psychVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.PURPLE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	    
+	var fnfVer:FlxText = new FlxText(12, FlxG.height - 24, 0, "Friday Night Funkin' V" + funkinVersion, 12);
+	fnfVer.scrollFactor.set();
+	fnfVer.setFormat(Paths.font("vcr.ttf"), 16, FlxColor.WHITE, LEFT, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
+	add(PicoVer);
         add(psychVer);
+	add(fnfVer);
         changeItem();
 
         #if CHECK_FOR_UPDATES
