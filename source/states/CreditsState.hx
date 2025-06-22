@@ -21,7 +21,7 @@ class CreditsState extends MusicBeatState
 	{
 		#if DISCORD_ALLOWED
 		// Updating Discord Rich Presence
-		DiscordClient.changePresence("In the Menus", null);
+		DiscordClient.changePresence("In the Credits Menu", null);
 		#end
 
 		persistentUpdate = true;
@@ -38,8 +38,8 @@ class CreditsState extends MusicBeatState
 		#end
 
 		var defaultList:Array<Array<String>> = [ //Name - Icon name - Description - Link - BG Color
-			["Pico Engine 2.2 Demo"],
-			["lucas",		"icon",		"he was the programmer of Pico Engin",					"https://beacons.ai/lucassmb?fbclid=PAZXh0bgNhZW0CMTEAAacY4PlNCeH_AYPLxfiMxm-5TuHmwwlHZMayR9F26IFixa2RiBHSHY9kKQMIvA_aem_Gtur_PrgdhXZDATGb6mlTg",	"0026FF"],
+			["Pico Engine 2.3.0],
+			["lucas",		"icon",		"he was the programmer of Pico Engine",					"https://github.com/Lucas62944/FNF-Pico-Enigne",	"0026FF"],
 			[""],
 			["Psych Engine Team"],
 			["Shadow Mario",		"shadowmario",		"Main Programmer and Head of Psych Engine",					"https://ko-fi.com/shadowmario",	"444444"],
