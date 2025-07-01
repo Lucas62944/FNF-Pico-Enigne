@@ -3,7 +3,7 @@
 * If you also want to play the JS-Engine version of my mod it's here https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html?
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
-## Mobile-Port
+## Credits-Mobile
 * he was the one who programmed the Pico Engine and also made the port for Android
 
 ## Special Thanks
