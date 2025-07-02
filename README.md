@@ -2,7 +2,7 @@
 * please go here to download the other Pico Mods please https://gamebanana.com/mods/529389
 
 # Alternative links
-* JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html?
+* JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html
 * Gamejolt https://gamejolt.com/games/PicoV2/948902
 
 ## Credits
