@@ -1,8 +1,7 @@
 # Friday Night Funkin-Pico Engine
 * please go here to download the other Pico Mods please https://gamebanana.com/mods/529389
-* If you also want to play the JS-Engine version of my mod it's here https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html?
 
-# alternative links
+# Alternative links
 * JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html?
 * gamejolt https://gamejolt.com/games/PicoV2/948902
 
