@@ -3,7 +3,7 @@
 
 # Alternative links
 * JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html?
-* gamejolt https://gamejolt.com/games/PicoV2/948902
+* Gamejolt https://gamejolt.com/games/PicoV2/948902
 
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
