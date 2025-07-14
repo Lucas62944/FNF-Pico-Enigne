@@ -20,6 +20,7 @@
 ## Future implementations
 * In the next update there will be a character editor that can save the character's positions in the mod
 ![image](https://github.com/user-attachments/assets/c93ef213-7381-4216-b5fa-a38d02be2ad8)
+
 and some more freeplay edits and some extra things
 
 ## Main menu Rework
