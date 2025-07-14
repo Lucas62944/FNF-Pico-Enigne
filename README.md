@@ -19,30 +19,15 @@
 
 ## Future implementations
 * In the next update there will be a character editor that can save the character's positions in the mod
-
 ![image](https://github.com/user-attachments/assets/c93ef213-7381-4216-b5fa-a38d02be2ad8)
-
 and some more freeplay edits and some extra things
 
-## Main menu
-
-![image](https://github.com/user-attachments/assets/7b2d6a38-6d3f-4650-9460-689ff161c607)
-
+## Main menu Rework
+<img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" />
 There are some more things in the main menu like new Achievements
 we will have story mode back with week 3 of Arrow funk and much more
 
-## Settings
-
- ![image](https://github.com/user-attachments/assets/56cae3dd-d44b-40b2-9c58-26205b3d3927)
-
-* Now the pico mod has an engine for the mod
-
 ## Pause Menu
 ![image](https://github.com/user-attachments/assets/cfde74b0-1ca0-4d73-8560-ce0028e44583)
-
-## Score-Text
-![Captura de tela 2025-02-23 131704](https://github.com/user-attachments/assets/dfc3bd85-88e5-4e85-8a63-413117aa1162)
-
-
 ## Updates
-* the update now and final update to 2.3.0
+* Next Update For 2.3.0
