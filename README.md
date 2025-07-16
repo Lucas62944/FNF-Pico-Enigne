@@ -1,9 +1,8 @@
 # Friday Night Funkin-Pico Engine
-* please go here to download the other Pico Mods please https://gamebanana.com/mods/529389
+* please go here to download the other Pico Mods please https://gamejolt.com/games/Pico-Engine/948902
 
 # Alternative links
 * JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html
-* Gamejolt https://gamejolt.com/games/PicoV2/948902
 
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
