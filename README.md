@@ -3,7 +3,7 @@
 
 # Alternative links
 * JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html
-* https://lucassanches.itch.io/picoengine
+* Play Now https://lucassanches.itch.io/picoengine
 
 ## Credits
 * Lucas - he was the person who programmed the Pico Engine
