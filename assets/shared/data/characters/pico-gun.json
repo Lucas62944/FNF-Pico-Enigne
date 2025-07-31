@@ -1,0 +1,71 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-40, -80],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Pico Idle Dance",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [35, -45],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "PicoUp",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [116, -152],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "PicoDown",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-26, -84],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "PicoLeft",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-30, -76],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "PicoRight",
+			"indices": []
+		},
+		{
+			"offsets": [-76, 6],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "Pico Shootin Kid"
+		},
+		{
+			"offsets": [-88, -67],
+			"indices": [],
+			"fps": 24,
+			"anim": "reload",
+			"loop": false,
+			"name": "Pico No Ammo"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Pico-Gun-assets, characters/pico-shoot",
+	"position": [-30, 300],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [183, 216, 85],
+	"camera_position": [50, 0],
+	"sing_duration": 4,
+	"scale": 1.5,
+	"_editor_isPlayer": false
+}

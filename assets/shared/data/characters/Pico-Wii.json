@@ -1,0 +1,87 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [-12, 2],
+			"anim": "idle",
+			"fps": 24,
+			"name": "i",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-47, 35],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "u",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-9, -65],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "d",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [220, -26],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "l",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-167, 9],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "r",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-62, 40],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "missu",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-22, -64],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "missd",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [65, -28],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "missl",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-157, 13],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "missr",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/PICO_WII_assets_V6",
+	"position": [-60, 280],
+	"healthicon": "Pico-Wii",
+	"flip_x": true,
+	"healthbar_colors": [183, 216, 85],
+	"camera_position": [30, 10],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

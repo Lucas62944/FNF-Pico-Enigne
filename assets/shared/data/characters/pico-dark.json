@@ -1,0 +1,113 @@
+{
+	"animations": [
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "idle",
+			"name": "Pico Idle Dance"
+		},
+		{
+			"offsets": [-50, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHT",
+			"name": "Pico Note Right0"
+		},
+		{
+			"offsets": [84, -77],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWN",
+			"name": "Pico Down Note0"
+		},
+		{
+			"offsets": [21, 28],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUP",
+			"name": "pico Up note0"
+		},
+		{
+			"offsets": [84, -11],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFT",
+			"name": "Pico NOTE LEFT0"
+		},
+		{
+			"offsets": [68, 20],
+			"loop": false,
+			"fps": 24,
+			"anim": "singLEFTmiss",
+			"name": "Pico NOTE LEFT miss"
+		},
+		{
+			"offsets": [80, -40],
+			"loop": false,
+			"fps": 24,
+			"anim": "singDOWNmiss",
+			"name": "Pico Down Note MISS"
+		},
+		{
+			"offsets": [29, 70],
+			"loop": false,
+			"fps": 24,
+			"anim": "singUPmiss",
+			"name": "pico Up note miss"
+		},
+		{
+			"offsets": [-55, 45],
+			"loop": false,
+			"fps": 24,
+			"anim": "singRIGHTmiss",
+			"name": "Pico Note Right Miss"
+		},
+		{
+			"offsets": [33, -3],
+			"loop": false,
+			"fps": 24,
+			"anim": "burpShit",
+			"name": "burpshit"
+		},
+		{
+			"offsets": [33, -3],
+			"loop": false,
+			"fps": 24,
+			"anim": "burpSmile",
+			"name": "burpsmile"
+		},
+		{
+			"offsets": [-10, -3],
+			"loop": false,
+			"fps": 24,
+			"anim": "shit",
+			"name": "shit"
+		},
+		{
+			"offsets": [38, 2],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"name": "Pico HEY!!0"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "cheer",
+			"name": "Pico YEAH cheer0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/Dark-Characters/Pico/pico_dark",
+	"position": [0, 300],
+	"healthicon": "pico",
+	"flip_x": true,
+	"healthbar_colors": [183, 216, 85],
+	"camera_position": [200, 40],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

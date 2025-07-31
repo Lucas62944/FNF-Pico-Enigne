@@ -1,0 +1,151 @@
+{
+	"animations": [
+		{
+			"offsets": [-70, 218],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceLeft",
+			"indices": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+			"name": "GF Dancing"
+		},
+		{
+			"offsets": [-70, 218],
+			"loop": false,
+			"fps": 24,
+			"anim": "danceRight",
+			"indices": [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32],
+			"name": "GF Dancing"
+		},
+		{
+			"loop": false,
+			"offsets": [52, 199],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "GF Note left0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-73, 216],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "GF Note right0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-26, 79],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "GF Note down0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-107, 211],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "GF Note up0",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [43, 200],
+			"anim": "singLEFTmiss",
+			"fps": 24,
+			"name": "GF Note left miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-40, 220],
+			"anim": "singRIGHTmiss",
+			"fps": 24,
+			"name": "GF Note right miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [-110, 221],
+			"anim": "singUPmiss",
+			"fps": 24,
+			"name": "GF Note up miss",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 90],
+			"anim": "singDOWNmiss",
+			"fps": 24,
+			"name": "GF Note down miss",
+			"indices": []
+		},
+		{
+			"offsets": [28, 211],
+			"loop": false,
+			"fps": 24,
+			"anim": "attack",
+			"indices": [],
+			"name": "GF ATTACK"
+		},
+		{
+			"offsets": [-92, 210],
+			"loop": true,
+			"fps": 24,
+			"anim": "scared",
+			"indices": [],
+			"name": "GF SCARED"
+		},
+		{
+			"offsets": [-64, 205],
+			"loop": false,
+			"fps": 24,
+			"anim": "dodge",
+			"indices": [],
+			"name": "GF Dodge"
+		},
+		{
+			"offsets": [-3, 221],
+			"loop": false,
+			"fps": 24,
+			"anim": "hurt",
+			"indices": [],
+			"name": "GF Hit"
+		},
+		{
+			"offsets": [-67, 299],
+			"loop": false,
+			"fps": 24,
+			"anim": "hey",
+			"indices": [],
+			"name": "GF Happy"
+		},
+		{
+			"loop": false,
+			"offsets": [-66, 200],
+			"anim": "pre-attack",
+			"fps": 24,
+			"name": "GF preparing attack",
+			"indices": []
+		},
+		{
+			"offsets": [-78, 217],
+			"loop": false,
+			"fps": 24,
+			"anim": "blush",
+			"indices": [],
+			"name": "GF Blush"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/GF_my-take_assets",
+	"position": [-40, 390],
+	"healthicon": "gf",
+	"flip_x": true,
+	"healthbar_colors": [165, 0, 77],
+	"camera_position": [10, -60],
+	"sing_duration": 4,
+	"scale": 0.8,
+	"_editor_isPlayer": true
+}
