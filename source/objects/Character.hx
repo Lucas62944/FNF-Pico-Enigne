@@ -1,17 +1,14 @@
 package objects;
 
 import backend.animation.PsychAnimationController;
-
 import flixel.util.FlxSort;
 import flixel.util.FlxDestroyUtil;
-
 import openfl.utils.AssetType;
 import openfl.utils.Assets;
 import haxe.Json;
 import psychlua.FunkinLua;
-
-import backend.Song;
 import states.stages.objects.TankmenBG;
+import lucas.states.engine.backend.Song;
 
 typedef CharacterFile = {
 	var animations:Array<AnimArray>;
@@ -108,9 +105,8 @@ class Character extends FlxSprite
 		animationsArray = [];
 		animOffsets = [];
 		curCharacter = character;
-		var characterPath:String = 'characters/$character.json';
-		var luaFile:String = 'shared/scripts/characters/' + character + '.lua';
-
+		var characterPath:String = 'data/characters/$character.json';
+	
 		var path:String = Paths.getPath(characterPath, TEXT);
 		#if MODS_ALLOWED
 		if (!FileSystem.exists(path))
