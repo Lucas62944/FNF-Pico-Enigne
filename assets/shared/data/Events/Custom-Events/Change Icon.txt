@@ -1,0 +1,7 @@
+Changes icon to new icon name
+Value 1: Which character (dad or bf), Icon name
+Value 2: hex or rgb code for health bar.
+
+example -
+    Value 1: bf, gf
+    Value 2: rgb or hex, 165,0,77 or a5004d
