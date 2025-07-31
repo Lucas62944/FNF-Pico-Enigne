@@ -1,0 +1,45 @@
+{
+	"songs": [
+		[
+			"darnell",
+			"darnell",
+			[
+				115,
+				94,
+				176
+			]
+		],
+		[
+			"lit-up",
+			"darnell",
+			[
+				115,
+				94,
+				176
+			]
+		],
+		[
+			"2hot",
+			"darnell",
+			[
+				115,
+				94,
+				176
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "BF, BF-FanChart, GF, GF-Rechart, Erect-Rechart, Nightmare-Rechart, Tankman, Spooky",
+	"weekCharacters": [
+		"darnell",
+		"pico",
+		"nene"
+	],
+	"storyName": "Your New Week",
+	"weekName": "Custom Week",
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

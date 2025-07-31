@@ -1,0 +1,45 @@
+{
+	"storyName": "PICO!",
+	"difficulties": "hard, erect, nightmare",
+	"hideFreeplay": true,
+	"weekBackground": "philly",
+	"weekBefore": "",
+	"startUnlocked": true,
+	"hideStoryMode": false,
+	"songs": [
+		[
+			"pico",
+			"pico",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"philly-nice",
+			"face",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"blammed",
+			"face",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"pico",
+		"bf",
+		"gf"
+	],
+	"weekName": "Custom Week",
+	"hiddenUntilUnlocked": false
+}
