@@ -1,0 +1,167 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["ZoomCamera", "1", "quartIn"]
+			]
+		],
+		[
+			3300,
+			[
+				["ZoomCamera", "quartOut", "6"]
+			]
+		],
+		[
+			15000,
+			[
+				["ZoomCamera", "expoIn", "2"]
+			]
+		],
+		[
+			16000,
+			[
+				["ZoomCamera", "4", "elasticOut"]
+			]
+		],
+		[
+			28800,
+			[
+				["SetCameraBop", "1", "1.3"]
+			]
+		],
+		[
+			28900,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			29700,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			30400,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			31200,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			32000,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			32900,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			33600,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			34400,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			35200,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			36000,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			36800,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			37600,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			38400,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			39200,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			40000,
+			[
+				["ZoomCamera", "4", "expoOut"]
+			]
+		],
+		[
+			40800,
+			[
+				["SetCameraBop", "0", "1"]
+			]
+		],
+		[
+			41500,
+			[
+				["SetCameraBop", "4", "1"]
+			]
+		],
+		[
+			41600,
+			[
+				["ZoomCamera", "4", "elasticOut"]
+			]
+		],
+		[
+			54100,
+			[
+				["ZoomCamera", "3", "expoIn"]
+			]
+		],
+		[
+			54400,
+			[
+				["SetCameraBop", "1", "1.2"]
+			]
+		],
+		[
+			67200,
+			[
+				["ZoomCamera", "4", "elasticOut"]
+			]
+		],
+		[
+			80000,
+			[
+				["SetCameraBop", "4", "1"]
+			]
+		]
+	],
+	"format": "psych_v1_convert"
+}

@@ -1,0 +1,446 @@
+{
+	"player1": "darnell-Playable",
+	"notes": [
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[9000, 6, 0, "Hey!"]
+			],
+			"sectionBeats": 4,
+			"gfSection": true,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[9600, 6, 450],
+				[10800, 4, 450]
+			],
+			"sectionBeats": 4,
+			"gfSection": true,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[12000, 5, 450],
+				[13200, 6, 450],
+				[13800, 6, 0]
+			],
+			"sectionBeats": 4,
+			"gfSection": true,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[14400, 2, 450],
+				[15000, 0, 0],
+				[15300, 3, 0],
+				[15600, 1, 0],
+				[16200, 3, 0],
+				[16500, 0, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[16800, 2, 0],
+				[16950, 0, 0],
+				[17100, 1, 0],
+				[17250, 3, 0],
+				[17400, 2, 0],
+				[17700, 1, 0],
+				[18000, 0, 0],
+				[18300, 3, 0],
+				[18600, 2, 0],
+				[18600, 6, 0, "No Animation"]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[19200, 5, 0],
+				[19350, 4, 0],
+				[19500, 6, 0],
+				[19650, 7, 0],
+				[19800, 4, 0],
+				[19950, 7, 0],
+				[20100, 4, 0],
+				[20250, 5, 0],
+				[20550, 6, 0],
+				[20700, 4, 0],
+				[21000, 6, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[21600, 6, 0],
+				[21750, 7, 0],
+				[21900, 5, 0],
+				[22050, 4, 0],
+				[22200, 7, 0],
+				[22350, 4, 0],
+				[22500, 7, 0],
+				[22650, 6, 0],
+				[22950, 5, 0],
+				[23100, 7, 0],
+				[23400, 4, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[24000, 2, 0],
+				[24150, 3, 0],
+				[24300, 1, 0],
+				[24450, 0, 0],
+				[24600, 2, 0],
+				[24750, 0, 0],
+				[24900, 1, 0],
+				[25050, 3, 0],
+				[25350, 1, 0],
+				[25500, 0, 0],
+				[25800, 2, 450]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[26400, 1, 0],
+				[26400, 5, 450, "GF Sing"],
+				[26550, 0, 0],
+				[26700, 2, 0],
+				[26850, 3, 0],
+				[27000, 1, 0],
+				[27000, 7, 450, "GF Sing"],
+				[27150, 3, 0],
+				[27300, 2, 0],
+				[27450, 0, 0],
+				[27600, 2, 0],
+				[27600, 4, 450, "GF Sing"],
+				[27750, 0, 0],
+				[27900, 3, 0],
+				[28200, 1, 450],
+				[28200, 6, 450, "GF Sing"]
+			],
+			"sectionBeats": 4,
+			"gfSection": false,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[28800, 4, 0],
+				[29100, 5, 0],
+				[29400, 7, 0],
+				[30000, 7, 0],
+				[30300, 5, 0],
+				[30600, 4, 0],
+				[30900, 5, 0]
+			],
+			"sectionBeats": 4,
+			"gfSection": true,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[31200, 7, 0, "GF Sing"],
+				[31800, 6, 0, "GF Sing"],
+				[32100, 6, 300, "GF Sing"],
+				[32400, 7, 0, "GF Sing"],
+				[32550, 6, 0, "GF Sing"],
+				[32700, 5, 0, "GF Sing"],
+				[32850, 4, 75, "GF Sing"],
+				[33000, 7, 0, "GF Sing"],
+				[33000, 6, 450, "GF Sing"]
+			],
+			"sectionBeats": 4,
+			"gfSection": true,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[33600, 1, 0],
+				[33900, 3, 0],
+				[34200, 0, 450],
+				[34800, 0, 0],
+				[35100, 3, 0],
+				[35400, 1, 0],
+				[35700, 1, 0],
+				[35850, 1, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[36000, 2, 0],
+				[36300, 3, 0],
+				[36450, 1, 0],
+				[36600, 0, 300],
+				[36900, 3, 0],
+				[37200, 2, 0],
+				[37350, 0, 0],
+				[37500, 1, 0],
+				[37650, 0, 0],
+				[37800, 2, 0],
+				[38100, 1, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[38400, 6, 300],
+				[38400, 2, 0],
+				[38700, 4, 0],
+				[38700, 1, 0],
+				[39000, 5, 0],
+				[39000, 2, 0],
+				[39150, 3, 0],
+				[39300, 7, 0],
+				[39300, 1, 0],
+				[39450, 4, 0],
+				[39450, 0, 0],
+				[39600, 6, 0],
+				[39600, 1, 0],
+				[39900, 4, 0],
+				[39900, 0, 0],
+				[40050, 2, 0],
+				[40200, 6, 0],
+				[40200, 1, 0],
+				[40500, 3, 0],
+				[40500, 5, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[40800, 4, 0],
+				[40800, 2, 0],
+				[40950, 0, 0],
+				[41100, 5, 0],
+				[41100, 2, 0],
+				[41250, 5, 0],
+				[41250, 0, 0],
+				[41400, 7, 300],
+				[41400, 2, 0],
+				[41700, 5, 0],
+				[41700, 3, 0],
+				[41850, 4, 0],
+				[42000, 7, 0],
+				[42000, 2, 0],
+				[42150, 1, 0],
+				[42300, 4, 0],
+				[42300, 2, 0],
+				[42450, 4, 0],
+				[42450, 3, 0],
+				[42600, 6, 300],
+				[42600, 2, 300],
+				[42900, 1, 0],
+				[42900, 7, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[43200, 5, 0],
+				[43200, 3, 0],
+				[43350, 1, 0],
+				[43500, 3, 0],
+				[43650, 1, 0],
+				[43800, 5, 0],
+				[43800, 3, 0],
+				[44100, 7, 0],
+				[44100, 0, 0],
+				[44250, 5, 0],
+				[44400, 4, 0],
+				[44400, 1, 0],
+				[44550, 2, 0],
+				[44700, 1, 0],
+				[44850, 4, 0],
+				[44850, 2, 0],
+				[45000, 6, 300],
+				[45000, 1, 0],
+				[45300, 5, 0],
+				[45300, 3, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[45600, 1, 0],
+				[45600, 5, 0],
+				[45750, 7, 0],
+				[45900, 5, 0],
+				[45900, 3, 0],
+				[46200, 1, 0],
+				[46200, 4, 0],
+				[46500, 6, 0],
+				[46500, 0, 0],
+				[46800, 7, 0],
+				[46800, 2, 0],
+				[47100, 4, 0],
+				[47100, 1, 0],
+				[47400, 5, 0],
+				[47400, 2, 0],
+				[47550, 6, 0],
+				[47550, 1, 0],
+				[47700, 7, 300],
+				[47700, 0, 300]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[48000, 6, 300, "GF Sing"],
+				[48600, 5, 300, "GF Sing"],
+				[49200, 7, 0, "GF Sing"],
+				[49350, 5, 0, "GF Sing"],
+				[49500, 7, 0, "GF Sing"],
+				[49650, 4, 0, "GF Sing"],
+				[49800, 5, 375, "GF Sing"]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[50400, 6, 0, "GF Sing"],
+				[50550, 7, 0, "GF Sing"],
+				[50700, 6, 0, "GF Sing"],
+				[50850, 4, 0, "GF Sing"],
+				[51000, 6, 0, "GF Sing"],
+				[51150, 7, 0, "GF Sing"],
+				[51300, 6, 0, "GF Sing"],
+				[51450, 4, 75, "GF Sing"],
+				[51600, 5, 300, "GF Sing"],
+				[51900, 7, 300, "GF Sing"],
+				[52200, 6, 375, "GF Sing"]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": false
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[52800, 2, 0],
+				[53400, 1, 0],
+				[53700, 3, 0],
+				[54000, 0, 0],
+				[54600, 3, 0],
+				[54900, 1, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[55200, 2, 0],
+				[55350, 1, 0],
+				[55500, 0, 0],
+				[55800, 3, 0],
+				[56100, 1, 0],
+				[56400, 2, 0],
+				[56700, 3, 0],
+				[57000, 2, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [
+				[57600, 1, 0]
+			],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		},
+		{
+			"typeOfSection": 0,
+			"sectionNotes": [],
+			"sectionBeats": 4,
+			"mustHitSection": true
+		}
+	],
+	"player2": "pico",
+	"disableNoteRGB": false,
+	"gameOverEnd": "gameOverEnd-pico",
+	"song": "Tutorial-Darnell",
+	"format": "psych_v1_convert",
+	"artist": null,
+	"speed": 1.4,
+	"sectionLengths": [],
+	"events": [
+		[
+			18600,
+			[
+				["Play Animation", "hey", "gf"]
+			]
+		],
+		[
+			61800,
+			[
+				["Hey!", "k", ""]
+			]
+		]
+	],
+	"gfVersion": "nene",
+	"gameOverSound": "darnell boom",
+	"gameOverLoop": "darnell gameover",
+	"gameOverChar": "darnell_dead",
+	"needsVoices": false,
+	"stage": "MainStage",
+	"sections": 0,
+	"bpm": 100
+}

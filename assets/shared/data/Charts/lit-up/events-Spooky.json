@@ -1,0 +1,179 @@
+{
+	"events": [
+		[
+			7159.09090909091,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			9545.45454545454,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			10568.1818181818,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			15000,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			15681.8181818182,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			16022.7272727273,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			20454.5454545455,
+			[
+				["ZoomCamera", "expoOut", "43"]
+			]
+		],
+		[
+			21903.4090909091,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			23863.6363636364,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			24630.6818181818,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			25909.0909090909,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			27357.9545454545,
+			[
+				["ZoomCamera", "expoOut", "53"]
+			]
+		],
+		[
+			29318.1818181818,
+			[
+				["ZoomCamera", "expoOut", "53"]
+			]
+		],
+		[
+			31363.6363636364,
+			[
+				["ZoomCamera", "expoOut", "53"]
+			]
+		],
+		[
+			32812.5,
+			[
+				["ZoomCamera", "4", "linear"]
+			]
+		],
+		[
+			50454.5454545454,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			50965.9090909091,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			51903.4090909091,
+			[
+				["ZoomCamera", "smoothStepOut", "32"]
+			]
+		],
+		[
+			61704.5454545454,
+			[
+				["ZoomCamera", "32", "expoOut"]
+			]
+		],
+		[
+			64090.9090909091,
+			[
+				["ZoomCamera", "32", "expoOut"]
+			]
+		],
+		[
+			65113.6363636363,
+			[
+				["ZoomCamera", "32", "expoOut"]
+			]
+		],
+		[
+			73721.5909090909,
+			[
+				["ZoomCamera", "smoothStepOut", "41.5"]
+			]
+		],
+		[
+			76448.8636363636,
+			[
+				["ZoomCamera", "linear", "4"]
+			]
+		],
+		[
+			92897.7272727273,
+			[
+				["ZoomCamera", "smoothStepOut", "32"]
+			]
+		],
+		[
+			95539.7727272727,
+			[
+				["ZoomCamera", "smoothStepOut", "32"]
+			]
+		],
+		[
+			102272.727272727,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			103721.590909091,
+			[
+				["ZoomCamera", "expoOut", "32"]
+			]
+		],
+		[
+			107727.272727273,
+			[
+				["ZoomCamera", "expoOut", "15"]
+			]
+		],
+		[
+			109090.909090909,
+			[
+				["ZoomCamera", "smoothStepOut", "50"]
+			]
+		]
+	],
+	"format": "psych_v1_convert"
+}

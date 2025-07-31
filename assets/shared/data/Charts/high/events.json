@@ -1,0 +1,190 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["Torch's Custom Zoom", "Main", "0.6,1,smootherStepInOut"],
+				["Set Health Drain", "0.02", ""],
+				["Enemy Splashes", "true", "true"]
+			]
+		],
+		[
+			3840,
+			[
+				["Torch's Custom Zoom", "Main", "0.8,1,smoothStepInOut"]
+			]
+		],
+		[
+			17280,
+			[
+				["Torch's Custom Zoom", "Main", "0.65,3,smoothStepInOut"]
+			]
+		],
+		[
+			26880,
+			[
+				["Torch's Custom Zoom", "Main", "0.8,2,smoothStepInOut"]
+			]
+		],
+		[
+			32520,
+			[
+				["Torch's Custom Zoom", "Main", "1,0.1,smoothStepInOut"],
+				["Camera Follow Pos", "1300", "450"]
+			]
+		],
+		[
+			32640,
+			[
+				["Play Animation", "huh", "bf"]
+			]
+		],
+		[
+			33480,
+			[
+				["Play Animation", "burp", "bf"],
+				["Screen Shake", "0.4,0.02", ""]
+			]
+		],
+		[
+			34080,
+			[
+				["Torch's Custom Zoom", "Main", "0.75,1,smoothStepInOut"],
+				["Camera Follow Pos", "", ""]
+			]
+		],
+		[
+			34509,
+			[
+				["Set Property", "cameraSpeed", "2"]
+			]
+		],
+		[
+			34620,
+			[
+				["Set Property", "cameraSpeed", "1"]
+			]
+		],
+		[
+			38400,
+			[
+				["Torch's Custom Zoom", "Main", "0.7,1,smoothStepInOut"]
+			]
+		],
+		[
+			42240,
+			[
+				["Torch's Custom Zoom", "Main", "0.6,1.6,smoothStepInOut"],
+				["Camera Follow Pos", "700", "500"],
+				["Color Transform", "1", "5.72"]
+			]
+		],
+		[
+			46080,
+			[
+				["Torch's Custom Zoom", "Main", "0.8,2.5,smoothStepInOut"],
+				["Camera Follow Pos", "", ""],
+				["Set Property", "cameraSpeed", "0.2"]
+			]
+		],
+		[
+			48360,
+			[
+				["Set Property", "cameraSpeed", "1"]
+			]
+		],
+		[
+			57840,
+			[
+				["Torch's Custom Zoom", "Main", "0.75,1,smoothStepInOut"]
+			]
+		],
+		[
+			68760,
+			[
+				["Play Animation", "singDOWNmiss", "bf"]
+			]
+		],
+		[
+			69120,
+			[
+				["Torch's Custom Zoom", "Main", "0.7,1,smoothStepInOut"]
+			]
+		],
+		[
+			72960,
+			[
+				["Torch's Custom Zoom", "Main", "0.6,1.6,smoothStepInOut"],
+				["Camera Follow Pos", "700", "500"],
+				["Color Transform", "1", "5.72"]
+			]
+		],
+		[
+			76800,
+			[
+				["Torch's Custom Zoom", "Main", "0.8,2.5,smoothStepInOut"],
+				["Camera Follow Pos", "", ""],
+				["Set Property", "cameraSpeed", "0.2"]
+			]
+		],
+		[
+			79080,
+			[
+				["Set Property", "cameraSpeed", "1"]
+			]
+		],
+		[
+			80640,
+			[
+				["Torch's Custom Zoom", "Main", "0.7,1,smoothStepInOut"],
+				["Camera Follow Pos", "700", "450"]
+			]
+		],
+		[
+			84480,
+			[
+				["Camera Follow Pos", "", ""],
+				["Torch's Custom Zoom", "Main", "1,3,smoothStepInOut"],
+				["Set Property", "cameraSpeed", "0.3"],
+				["Cinematics", "1,100", "80"]
+			]
+		],
+		[
+			88320,
+			[
+				["Set Property", "cameraSpeed", "1"],
+				["Camera Follow Pos", "700", "450"],
+				["Torch's Custom Zoom", "Main", "0.7,1,smoothStepInOut"]
+			]
+		],
+		[
+			92160,
+			[
+				["Torch's Custom Zoom", "Main", "1,3,smoothStepInOut"],
+				["Camera Follow Pos", "", ""],
+				["Set Property", "cameraSpeed", "0.3"]
+			]
+		],
+		[
+			96000,
+			[
+				["Set Property", "cameraSpeed", "1"]
+			]
+		],
+		[
+			107520,
+			[
+				["Play Animation", "huh", "bf"],
+				["Updated Camera Zoom", "main", "0.7,2,smoothStepOut"],
+				["Camera Follow Pos", "880", "450"]
+			]
+		],
+		[
+			111240,
+			[
+				["Camera Fade", "2", "off"]
+			]
+		]
+	],
+	"format": "psych_v1"
+}

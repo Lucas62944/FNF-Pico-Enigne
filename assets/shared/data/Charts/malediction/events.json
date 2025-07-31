@@ -1,0 +1,338 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["Hud Fade", "0", "0"]
+			]
+		],
+		[
+			2000,
+			[
+				["Hud Fade", "0", "100"],
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			18000,
+			[
+				["Flash Camera", "1", ""],
+				["Camera Zoom Speed", "8", "1"]
+			]
+		],
+		[
+			34500,
+			[
+				["Flash Camera", "1", ""],
+				["Camera Zoom Speed", "16", "1"]
+			]
+		],
+		[
+			42500,
+			[
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			50000,
+			[
+				["Character Camera Zoom", "", "0.75"]
+			]
+		],
+		[
+			51000,
+			[
+				["Character Camera Zoom", "", "0.85"]
+			]
+		],
+		[
+			52000,
+			[
+				["Character Camera Zoom", "", "0.65"]
+			]
+		],
+		[
+			54000,
+			[
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			58000,
+			[
+				["Character Camera Zoom", "0.75", ""]
+			]
+		],
+		[
+			59000,
+			[
+				["Character Camera Zoom", "0.85", ""]
+			]
+		],
+		[
+			60000,
+			[
+				["Character Camera Zoom", "0.65", ""]
+			]
+		],
+		[
+			62000,
+			[
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			66875,
+			[
+				["Lyrics", "Some", "343a70"],
+				["Play Animation", "singLEFT", "Dad"]
+			]
+		],
+		[
+			67000,
+			[
+				["Lyrics", "Somethings", "343a70"],
+				["Play Animation", "singDOWN", "Dad"]
+			]
+		],
+		[
+			67250,
+			[
+				["Lyrics", "Somethings wrong...", "343a70"],
+				["Play Animation", "singLEFT", "Dad"]
+			]
+		],
+		[
+			68000,
+			[
+				["Lyrics", "", "343a70"]
+			]
+		],
+		[
+			68500,
+			[
+				["Lyrics", "And", "343a70"],
+				["Play Animation", "singRIGHT", "Dad"]
+			]
+		],
+		[
+			68625,
+			[
+				["Lyrics", "And your", "343a70"],
+				["Play Animation", "singUP", "Dad"]
+			]
+		],
+		[
+			68750,
+			[
+				["Lyrics", "And your all", "343a70"],
+				["", "", ""],
+				["Play Animation", "singLEFT", "Dad"]
+			]
+		],
+		[
+			68875,
+			[
+				["Lyrics", "And your all hide", "343a70"]
+			]
+		],
+		[
+			69000,
+			[
+				["Lyrics", "And your all hide it", "343a70"],
+				["Play Animation", "singLEFT", "Dad"]
+			]
+		],
+		[
+			69125,
+			[
+				["Lyrics", "And your all hide it from", "343a70"],
+				["Play Animation", "singDOWN", "Dad"]
+			]
+		],
+		[
+			69250,
+			[
+				["Lyrics", "And your all hide it from me!", "343a70"],
+				["Play Animation", "singUP", "Dad"]
+			]
+		],
+		[
+			70000,
+			[
+				["Lyrics", "", "343a70"],
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			86000,
+			[
+				["Character Camera Zoom", "", "0.75"]
+			]
+		],
+		[
+			87000,
+			[
+				["Character Camera Zoom", "", "0.85"]
+			]
+		],
+		[
+			87000,
+			[
+				["Play Animation", "burpsmile", "bf"]
+			]
+		],
+		[
+			88000,
+			[
+				["Character Camera Zoom", "", "0.95"]
+			]
+		],
+		[
+			88500,
+			[
+				["Play Animation", "shit", "bf"]
+			]
+		],
+		[
+			88875,
+			[
+				["Character Camera Zoom", "", "0.65"],
+				["Lyrics", "JUST", "343a70"]
+			]
+		],
+		[
+			89250,
+			[
+				["Lyrics", "JUST AD", "343a70"]
+			]
+		],
+		[
+			89375,
+			[
+				["Lyrics", "JUST ADMIT", "343a70"]
+			]
+		],
+		[
+			89625,
+			[
+				["Lyrics", "JUST ADMIT IT!", "343a70"]
+			]
+		],
+		[
+			90000,
+			[
+				["Change Character", "Dad", "curse-mad"],
+				["Flash Camera", "1", ""],
+				["Lyrics", "", ""],
+				["Camera Zoom Speed", "8", "1"]
+			]
+		],
+		[
+			106000,
+			[
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			122000,
+			[
+				["Change Character", "Dad", "curse-happy"],
+				["Flash Camera", "1", ""]
+			]
+		],
+		[
+			138000,
+			[
+				["Flash Camera", "1", ""],
+				["Camera Zoom Speed", "16", "1"]
+			]
+		],
+		[
+			146000,
+			[
+				["Play Animation", "burpsmile", "bf"]
+			]
+		],
+		[
+			146000,
+			[
+				["Flash Camera", "1", ""],
+				["Hud Fade", "1", "0"]
+			]
+		],
+		[
+			148750,
+			[
+				["Lyrics", "Things", "343a70"]
+			]
+		],
+		[
+			149125,
+			[
+				["Lyrics", "Things are...", "343a70"]
+			]
+		],
+		[
+			150250,
+			[
+				["Lyrics", "Things are... o", "343a70"]
+			]
+		],
+		[
+			150500,
+			[
+				["Lyrics", "Things are... okay?", "343a70"]
+			]
+		],
+		[
+			151875,
+			[
+				["Lyrics", "Then...", "343a70"]
+			]
+		],
+		[
+			152875,
+			[
+				["Lyrics", "Then... can", "343a70"]
+			]
+		],
+		[
+			153125,
+			[
+				["Lyrics", "Then... can we", "343a70"]
+			]
+		],
+		[
+			154000,
+			[
+				["Lyrics", "Then... can we try", "343a70"]
+			]
+		],
+		[
+			154250,
+			[
+				["Lyrics", "Then... can we try a", "343a70"]
+			]
+		],
+		[
+			154416.666666667,
+			[
+				["Lyrics", "Then... can we try again?", "343a70"]
+			]
+		],
+		[
+			155000,
+			[
+				["Play Animation", "shoot", "bf"]
+			]
+		],
+		[
+			156083.333333333,
+			[
+				["Lyrics", "", "4fa4ea"]
+			]
+		]
+	],
+	"format": "psych_v1"
+}

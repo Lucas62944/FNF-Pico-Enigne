@@ -1,0 +1,209 @@
+{
+	"events": [
+		[
+			0,
+			[
+				["ZoomCamera", "53", "smoothStepOut"]
+			]
+		],
+		[
+			2906.25,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		],
+		[
+			5906.25,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		],
+		[
+			8906.25,
+			[
+				["ZoomCamera", "elasticInOut", "2"]
+			]
+		],
+		[
+			11906.25,
+			[
+				["ZoomCamera", "elasticInOut", "2"]
+			]
+		],
+		[
+			14906.25,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			26531.25,
+			[
+				["ZoomCamera", "7", "elasticInOut"]
+			]
+		],
+		[
+			29156.25,
+			[
+				["ZoomCamera", "4", "cubeOut"]
+			]
+		],
+		[
+			29531.25,
+			[
+				["ZoomCamera", "2", "cubeOut"]
+			]
+		],
+		[
+			32156.25,
+			[
+				["ZoomCamera", "cubeOut", "4"]
+			]
+		],
+		[
+			32531.25,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			35156.25,
+			[
+				["ZoomCamera", "cubeOut", "4"]
+			]
+		],
+		[
+			35531.25,
+			[
+				["ZoomCamera", "2", "cubeOut"]
+			]
+		],
+		[
+			35906.25,
+			[
+				["ZoomCamera", "elasticIn", "2"]
+			]
+		],
+		[
+			38156.25,
+			[
+				["ZoomCamera", "cubeOut", "4"]
+			]
+		],
+		[
+			38531.25,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			38906.25,
+			[
+				["ZoomCamera", "2", "cubeOut"]
+			]
+		],
+		[
+			50531.25,
+			[
+				["ZoomCamera", "4", "elasticIn"]
+			]
+		],
+		[
+			50906.25,
+			[
+				["ZoomCamera", "elasticOut", "2"]
+			]
+		],
+		[
+			61593.75,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			65156.25,
+			[
+				["ZoomCamera", "cubeOut", "4"]
+			]
+		],
+		[
+			65531.25,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			68156.25,
+			[
+				["ZoomCamera", "cubeOut", "4"]
+			]
+		],
+		[
+			68531.25,
+			[
+				["ZoomCamera", "cubeOut", "2"]
+			]
+		],
+		[
+			71156.25,
+			[
+				["ZoomCamera", "4", "cubeOut"]
+			]
+		],
+		[
+			71531.25,
+			[
+				["ZoomCamera", "2", "cubeOut"]
+			]
+		],
+		[
+			71906.25,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		],
+		[
+			74156.25,
+			[
+				["ZoomCamera", "4", "cubeOut"]
+			]
+		],
+		[
+			74906.25,
+			[
+				["ZoomCamera", "10", "smoothStepOut"]
+			]
+		],
+		[
+			77906.25,
+			[
+				["ZoomCamera", "elasticInOut", "2"]
+			]
+		],
+		[
+			80906.25,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		],
+		[
+			83906.25,
+			[
+				["ZoomCamera", "elasticInOut", "2"]
+			]
+		],
+		[
+			86906.25,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		],
+		[
+			87468.75,
+			[
+				["ZoomCamera", "2", "elasticInOut"]
+			]
+		]
+	],
+	"format": "psych_v1_convert"
+}
