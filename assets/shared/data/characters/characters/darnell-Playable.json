@@ -1,0 +1,95 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "idle",
+			"fps": 24,
+			"name": "Idle",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "singLEFT",
+			"fps": 24,
+			"name": "Pose Left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, -10],
+			"anim": "singDOWN",
+			"fps": 24,
+			"name": "Pose Down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 0],
+			"anim": "singUP",
+			"fps": 24,
+			"name": "Pose Up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [0, 2],
+			"anim": "singRIGHT",
+			"fps": 24,
+			"name": "Pose Right",
+			"indices": []
+		},
+		{
+			"offsets": [2, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "laughCutscene",
+			"indices": [0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5, 0, 1, 2, 3, 4, 5],
+			"name": "Laugh"
+		},
+		{
+			"offsets": [8, 1],
+			"loop": false,
+			"fps": 24,
+			"anim": "lightCan",
+			"indices": [],
+			"name": "Light Can0"
+		},
+		{
+			"offsets": [15, 9],
+			"loop": false,
+			"fps": 24,
+			"anim": "kickCan",
+			"indices": [],
+			"name": "Kick Up0"
+		},
+		{
+			"offsets": [7, -1],
+			"loop": false,
+			"fps": 24,
+			"anim": "kneeCan",
+			"indices": [],
+			"name": "Knee Forward0"
+		},
+		{
+			"offsets": [0, 0],
+			"loop": false,
+			"fps": 24,
+			"anim": "pissed",
+			"indices": [],
+			"name": "Gets Pissed0"
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/darnell",
+	"position": [-200, 220],
+	"healthicon": "darnell",
+	"flip_x": false,
+	"healthbar_colors": [115, 94, 176],
+	"camera_position": [10, 10],
+	"sing_duration": 6.1,
+	"scale": 1,
+	"_editor_isPlayer": true
+}

@@ -1,0 +1,58 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				335,
+				41
+			],
+			"anim": "firstDeath",
+			"fps": 24,
+			"name": "spooky kids die",
+			"indices": []
+		},
+		{
+			"loop": true,
+			"offsets": [
+				335,
+				-135
+			],
+			"anim": "deathLoop",
+			"fps": 24,
+			"name": "spooky kids dead loop",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				338,
+				-105
+			],
+			"anim": "deathConfirm",
+			"fps": 24,
+			"name": "spooky kids restart",
+			"indices": []
+		}
+	],
+	"vocals_file": "",
+	"no_antialiasing": false,
+	"image": "characters/SpookyKids_Playable_DEATH",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "spooky",
+	"flip_x": true,
+	"healthbar_colors": [
+		213,
+		126,
+		0
+	],
+	"camera_position": [
+		-40,
+		120
+	],
+	"sing_duration": 4,
+	"scale": 1,
+	"_editor_isPlayer": true
+}
