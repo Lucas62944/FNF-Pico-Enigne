@@ -16,7 +16,7 @@ enum MainMenuColumn {
 class MainMenuState extends MusicBeatState
 {
 	public static var PicoEngineVersion:String = '2.3.0'; // This is also used for Discord RPC
-    public static var FunkinVersion:String = '0.7.3'; // Version of funkin' we are emulationg
+	public static var FunkinVersion:String = '0.7.3'; // Version of funkin' we are emulationg
 	public static var EngineVersion:String = '1.0.0';
 	public static var curSelected:Int = 0;
 	public static var curColumn:MainMenuColumn = CENTER;
@@ -32,7 +32,6 @@ class MainMenuState extends MusicBeatState
 
 	var leftOption:String = null;
 	var rightOption:String = 'options';
-
 	var magenta:FlxSprite;
 	var camFollow:FlxObject;
 
