@@ -1,0 +1,54 @@
+{
+	"camera_boyfriend": [
+		-150,
+		0
+	],
+	"preload": {
+		"images/erect/crowd": 2,
+		"images/erect/brightLightSmall": 2,
+		"images/erect/server": 3,
+		"images/erect/lightred": 2,
+		"images/erect/bg": 3,
+		"images/erect/backDark": 3,
+		"images/erect/lightgreen": 2,
+		"images/erect/lights": 3,
+		"images/erect/orangeLight": 2,
+		"images/erect/lightAbove": 2
+	},
+	"boyfriend": [
+		748,
+		150
+	],
+	"girlfriend": [
+		235,
+		150
+	],
+	"stageUI": "",
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"camera_girlfriend": [
+		-50,
+		50
+	],
+	"defaultZoom": 1,
+	"opponent": [
+		-175,
+		120
+	],
+	"directory": "week1",
+	"camera_speed": 1,
+	"hide_girlfriend": false,
+	"camera_opponent": [
+		150,
+		0
+	]
+}

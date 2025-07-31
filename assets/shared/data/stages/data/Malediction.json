@@ -1,0 +1,42 @@
+{
+	"_editorMeta": {
+		"boyfriend": "pico-playable",
+		"dad": "curse-nervous",
+		"gf": "nene"
+	},
+	"preload": {
+		"images/malediction/goofyahfountain": 3,
+		"images/malediction/treesfarback": 3,
+		"images/malediction/staticCurse": 3,
+		"images/malediction/floor": 3,
+		"images/malediction/treesback": 3,
+		"images/malediction/background": 3
+	},
+	"girlfriend": [
+		300,
+		120
+	],
+	"boyfriend": [
+		850,
+		160
+	],
+	"isPixelStage": false,
+	"defaultZoom": 0.65,
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"opponent": [
+		20,
+		140
+	],
+	"directory": "weekspecial",
+	"hide_girlfriend": false
+}

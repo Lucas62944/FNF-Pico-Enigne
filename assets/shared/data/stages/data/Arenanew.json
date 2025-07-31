@@ -1,0 +1,47 @@
+{
+	"camera_boyfriend": [
+		-50,
+		-50
+	],
+	"_editorMeta": {
+		"boyfriend": "pico-playable",
+		"dad": "matt",
+		"gf": "nene"
+	},
+	"preload": {
+		"images/matt/Arena/groundBG": 3,
+		"images/matt/Arena/skyBG": 3,
+		"images/matt/Arena/standsBG": 3,
+		"images/matt/Arena/railingBG": 3
+	},
+	"boyfriend": [
+		900,
+		410
+	],
+	"isPixelStage": false,
+	"girlfriend": [
+		450,
+		315
+	],
+	"objects": [
+		{
+			"type": "gf"
+		},
+		{
+			"type": "dad"
+		},
+		{
+			"type": "boyfriend"
+		}
+	],
+	"defaultZoom": 0.7,
+	"opponent": [
+		150,
+		420
+	],
+	"directory": "weekspecial",
+	"camera_opponent": [
+		200,
+		-50
+	]
+}
