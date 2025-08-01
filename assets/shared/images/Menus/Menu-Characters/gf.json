@@ -1,0 +1,9 @@
+{
+	"antialiasing": true,
+	"confirm_anim": "M GF Idle",
+	"idle_anim": "M GF Idle",
+	"position": [-27, -25],
+	"scale": 1.1,
+	"flipX": false,
+	"image": "Menu_GF"
+}

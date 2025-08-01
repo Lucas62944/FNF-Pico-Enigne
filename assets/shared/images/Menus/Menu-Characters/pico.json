@@ -1,0 +1,9 @@
+{
+	"confirm_anim": "M Pico Idle",
+	"antialiasing": true,
+	"idle_anim": "M Pico Idle",
+	"position": [60, -102],
+	"scale": 1.35,
+	"image": "Menu_Pico",
+	"flipX": false
+}
