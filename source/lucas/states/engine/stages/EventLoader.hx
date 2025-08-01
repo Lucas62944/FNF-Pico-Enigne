@@ -6,7 +6,7 @@ import lucas.funkin.engine.corruption.*;
 import lucas.funkin.engine.unused.*;
 import haxe.ds.List;
 import psychlua.FunkinLua;
-import states.MainMenuState;
+import lucas.states.engine.menus.MainMenuState;
 
 class EventLoader extends BaseStage {
     #if LUA_ALLOWED
