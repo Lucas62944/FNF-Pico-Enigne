@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Created with Funkin Packer v0.1.3 https://neeeoo.github.io/funkin-packer/
+-->
+<TextureAtlas imagePath="neneMII.png" width="2169" height="2227">
+	<SubTexture name="NENEidle0000" x="1" y="479" width="489" height="469" frameX="-428" frameY="-3" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0001" x="493" y="486" width="469" height="487" rotated="true" frameX="-430" frameY="-3" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0002" x="1" y="1" width="490" height="475" frameX="-430" frameY="-4" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0003" x="494" y="1" width="475" height="482" rotated="true" frameX="-438" frameY="-4" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0004" x="1425" y="457" width="382" height="457" rotated="true" frameX="-462" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0005" x="1428" y="1" width="361" height="426" rotated="true" frameX="-494" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0006" x="1789" y="917" width="353" height="398" rotated="true" frameX="-519" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0007" x="1769" y="1342" width="399" height="353" frameX="-518" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0008" x="1810" y="395" width="353" height="396" rotated="true" frameX="-521" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0009" x="1" y="1861" width="396" height="353" frameX="-521" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0010" x="919" y="1858" width="392" height="353" frameX="-525" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0011" x="400" y="1873" width="392" height="353" frameX="-525" frameY="-2" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0012" x="1792" y="1" width="367" height="391" rotated="true" frameX="-526" frameY="-3" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0013" x="1792" y="1" width="367" height="391" rotated="true" frameX="-526" frameY="-3" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0014" x="1419" y="942" width="367" height="397" frameX="-527" frameY="-5" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0015" x="1386" y="1399" width="380" height="467" frameX="-514" frameY="-5" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0016" x="467" y="976" width="466" height="439" rotated="true" frameX="-455" frameY="-6" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0017" x="1" y="1419" width="457" height="439" rotated="true" frameX="-455" frameY="-6" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0018" x="936" y="1399" width="447" height="456" frameX="-447" frameY="-7" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0019" x="467" y="1418" width="449" height="452" frameX="-445" frameY="-7" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0020" x="965" y="942" width="451" height="454" frameX="-445" frameY="-5" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0021" x="972" y="1" width="453" height="453" frameX="-443" frameY="-5" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0022" x="965" y="486" width="457" height="453" frameX="-443" frameY="-5" frameWidth="1333" frameHeight="674"/>
+	<SubTexture name="NENEidle0023" x="1" y="951" width="463" height="465" frameX="-437" frameY="-5" frameWidth="1333" frameHeight="674"/>
+</TextureAtlas>

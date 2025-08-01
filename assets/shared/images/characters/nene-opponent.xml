@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="nene.png">
+<SubTexture name="nene idle0000" x="1577" y="0" width="403" height="568" frameX="-337" frameY="-406" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene idle0001" x="1169" y="576" width="406" height="570" frameX="-341" frameY="-404" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene idle0002" x="1169" y="0" width="408" height="576" frameX="-344" frameY="-398" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene idle0003" x="387" y="0" width="399" height="584" frameX="-349" frameY="-390" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene idle0004" x="0" y="585" width="397" height="583" frameX="-350" frameY="-391" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene idle0005" x="0" y="585" width="397" height="583" frameX="-350" frameY="-391" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene left0000" x="781" y="585" width="360" height="581" frameX="-344" frameY="-393" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene left0001" x="397" y="585" width="384" height="583" frameX="-337" frameY="-391" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene down0000" x="733" y="1168" width="348" height="529" frameX="-384" frameY="-452" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene down0001" x="393" y="1168" width="340" height="542" frameX="-384" frameY="-440" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene up0000" x="1577" y="568" width="385" height="565" frameX="-348" frameY="-369" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene up0001" x="0" y="1168" width="393" height="555" frameX="-349" frameY="-378" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene right0000" x="0" y="0" width="387" height="585" frameX="-372" frameY="-389" frameWidth="1080" frameHeight="1080" />
+<SubTexture name="nene right0001" x="786" y="0" width="383" height="584" frameX="-365" frameY="-390" frameWidth="1080" frameHeight="1080" />
+</TextureAtlas>
