@@ -1,10 +1,9 @@
 package lucas.states.engine.stages;
 
-import lucas.funkin.engine.stages.erect.*;
-import lucas.funkin.engine.stages.standard.*;
-import lucas.funkin.engine.stages.spooky.*;
-import lucas.funkin.engine.stages.standard.corruption.*;
-import lucas.funkin.engine.stages.unused.stages.*;
+import lucas.funkin.vslice.stages.erect.*;
+import lucas.funkin.engine.*;
+import lucas.funkin.engine.corruption.*;
+import lucas.funkin.engine.unused.*;
 import haxe.ds.List;
 import psychlua.FunkinLua;
 import states.MainMenuState;
