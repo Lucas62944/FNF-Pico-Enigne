@@ -5,7 +5,6 @@ import backend.StageData;
 import backend.WeekData;
 import backend.Song;
 import backend.Rating;
-
 import flixel.FlxBasic;
 import flixel.FlxObject;
 import flixel.FlxSubState;
@@ -18,36 +17,28 @@ import lime.utils.Assets;
 import openfl.utils.Assets as OpenFlAssets;
 import openfl.events.KeyboardEvent;
 import haxe.Json;
-
 import cutscenes.DialogueBoxPsych;
-
 import states.StoryMenuState;
 import states.FreeplayState;
 import states.editors.ChartingState;
 import states.editors.CharacterEditorState;
-
 import substates.PauseSubState;
 import substates.GameOverSubstate;
-
 #if !flash
 import openfl.filters.ShaderFilter;
 #end
-
 import shaders.ErrorHandledShader;
-
 import objects.VideoSprite;
 import objects.Note.EventNote;
 import objects.*;
 import states.stages.*;
 import states.stages.objects.*;
-
 #if LUA_ALLOWED
 import psychlua.*;
 #else
 import psychlua.LuaUtils;
 import psychlua.HScript;
 #end
-
 #if HSCRIPT_ALLOWED
 import psychlua.HScript.HScriptInfos;
 import crowplexus.iris.Iris;
@@ -55,8 +46,12 @@ import crowplexus.hscript.Expr.Error as IrisError;
 import crowplexus.hscript.Printer;
 #end
 
-// Lucas Settings Within The Mod
-import lucas.EventLoader;
+// PicoEngine Settings
+import lucas.states.engine.stages.EventLoader;
+import lucas.states.engine.backend.Song;
+import lucas.states.engine.backend.StageData;
+import lucas.states.engine.menus.freeplay.FreeplayState;
+
 
 /**
  * This is where all the Gameplay stuff happens and is managed
@@ -88,8 +83,8 @@ class PlayState extends MusicBeatState
 		['Nice', 0.7], //69%
 		['Good', 0.8], //From 70% to 79%
 		['Great', 0.9], //From 80% to 89%
-		['Sick!', 1], //From 90% to 99%
-		['Perfect!!', 1] //The value on this one isn't used actually, since Perfect is always "1"
+		['Sick', 1], //From 90% to 99%
+		['Perfect!', 1] //The value on this one isn't used actually, since Perfect is always "1"
 	];
 
 	//event variables
