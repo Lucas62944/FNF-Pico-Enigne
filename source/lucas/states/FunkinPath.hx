@@ -1,4 +1,4 @@
-package lucas.compatibility.funkin;
+package lucas.states;
 
 import flixel.graphics.FlxGraphic;
 import openfl.media.Sound;
