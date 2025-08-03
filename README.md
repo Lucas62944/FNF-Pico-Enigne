@@ -26,7 +26,8 @@ and some more freeplay edits and some extra things
 There are some more things in the main menu like new Achievements
 we will have story mode back with week 3 of Arrow funk and much more
 
-## Pause Menu
-![image](https://github.com/user-attachments/assets/cfde74b0-1ca0-4d73-8560-ce0028e44583)
+## Pause Menu Rework
+<img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b559c1ae-e77c-4f26-813c-20a94d456720" />
+
 ## Updates
 * Next Update For 2.3.0H
