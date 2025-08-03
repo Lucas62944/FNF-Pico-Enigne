@@ -5,10 +5,9 @@
 * JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html
 * Play Now https://lucassanches.itch.io/picoengine
 
-## Credits
+## Credits/Mobile
 * Lucas - he was the person who programmed the Pico Engine
-## Credits-Mobile
-* he was the one who programmed the Pico Engine and also made the port for Android
+* He who made the port for mobile
 
 ## Special Thanks
 * GitHub Copilot he was the one who made half of the hx files for the stages
