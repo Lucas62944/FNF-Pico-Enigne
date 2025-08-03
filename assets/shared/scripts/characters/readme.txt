@@ -1,1 +1,0 @@
-Add scripts for your characters here
