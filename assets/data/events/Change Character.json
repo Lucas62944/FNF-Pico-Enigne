@@ -1,0 +1,14 @@
+{
+    "params": [
+        {
+            "name": "Character (bf/dad)",
+            "type": "DropDown('dad', 'bf')",
+            "defaultValue": "dad"
+        },
+        {
+            "name": "NewChar (char xml name) (make sure to preload the chars in the hx file)",
+            "type": "String",
+            "defaultValue": "mom"
+        }
+    ]
+}
