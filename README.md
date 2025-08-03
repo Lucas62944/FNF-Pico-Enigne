@@ -6,7 +6,7 @@
 * Play Now https://lucassanches.itch.io/picoengine
 
 ## Credits/Mobile
-* Lucas - he was the person who programmed the Pico Engine
+* Lucas - Main Programmer and Head of PicoEngine
 * He who made the port for mobile
 
 ## Special Thanks
