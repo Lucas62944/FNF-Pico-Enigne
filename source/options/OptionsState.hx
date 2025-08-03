@@ -1,17 +1,12 @@
 package options;
 
-import states.MainMenuState;
-import backend.StageData;
+import lucas.states.engine.menus.MainMenuState;
+import lucas.states.engine.backend.StageData;
+import lucas.states.engine.backend.GameJolt;
 
 class OptionsState extends MusicBeatState
 {
-    var options:Array<String> = [
-        'Controls',
-        'Graphics',
-        'Visuals',
-        'Gameplay'
-        #if TRANSLATIONS_ALLOWED , 'Language' #end
-    ];
+    var options:Array<String> = ['Note Colors', 'Controls', 'Adjust Delay and Combo', 'Graphics', 'GameJolt', 'Visuals', 'Gameplay' #if TRANSLATIONS_ALLOWED , 'Language' #end]; 
     private var grpOptions:FlxTypedGroup<Alphabet>;
     private static var curSelected:Int = 0;
     public static var menuBG:FlxSprite;
@@ -20,6 +15,10 @@ class OptionsState extends MusicBeatState
     function openSelectedSubstate(label:String) {
         switch(label)
         {
+            case 'Note Colors':
+				openSubState(new options.NotesColorSubState());
+			case 'GameJolt':
+				openSubState(new lucas.states.engine.backend.GameJolt());
             case 'Controls':
                 openSubState(new options.ControlsSubState());
             case 'Graphics':
