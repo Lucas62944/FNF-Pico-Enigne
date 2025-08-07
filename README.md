@@ -28,4 +28,4 @@ we will have story mode back with week 3 of Arrow funk and much more
 <img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b559c1ae-e77c-4f26-813c-20a94d456720" />
 
 ## Updates
-* Next Update For CodenameEngine
+* Next Update For CodenameEngine + Mega Update Path2
