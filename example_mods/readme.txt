@@ -1,4 +1,4 @@
-Psych's mods/ folder.
+Pico's mods/ folder.
 
 If you're a beginner, we recommend you extract modTemplate.zip to get started on developing your mod.
 Read the Psych GitHub wiki here:
