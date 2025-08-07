@@ -1,8 +1,7 @@
 # Friday Night Funkin': PicoEngine
-* click here to enter the other mod page Thank you https://gamejolt.com/games/Pico-Engine/948902
+* [Click Here To Enter The Other Mod Page Thank You](https://gamejolt.com/games/Pico-Engine/948902)
+* [JS-Engine](https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html)
 
-# Alternative links
-* JS-Engine https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html
 ## Credits/Mobile
 * Lucas - Main Programmer and Head of PicoEngine
 * He who made the port for mobile
