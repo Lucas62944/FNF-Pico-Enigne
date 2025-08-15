@@ -18,8 +18,9 @@
 There are some more things in the main menu like new Achievements
 we will have story mode back with week 3 of Arrow funk and much more
 
-## Pause Menu Rework
+## Pause Menu Rework And Part2
 <img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b559c1ae-e77c-4f26-813c-20a94d456720" />
+<img width="1366" height="697" alt="image" src="https://github.com/user-attachments/assets/bc3b2c7f-1dee-451f-8994-659dbe388881" />
 
 ## Updates
 * Next Update For CodenameEngine + Mega Update Path2
