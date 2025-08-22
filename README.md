@@ -3,18 +3,18 @@
 * [JS-Engine](https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html)
 
 ## Credits/Mobile
-* Lucas - Main Programmer and Head of PicoEngine
-* He who made the port for mobile
+* [Lucas](https://github.com/Lucas62944) - Main Programmer and Head of PicoEngine
 
 ## Special Thanks
-* GitHub Copilot. he was the one who made half of the hx files for the stages
-* Mikolka. She made the P-Slice engine and also made the ports of the Erect stages that are being used in my mod
+* [GitHub Copilot](https://github.com/features/copilot?locale=pt-BR) he was the one who made half of the hx files for the stages
+* [Mikolka](https://github.com/mikolka9144) She made the [P-Slice](https://github.com/Psych-Slice/P-Slice) Engine and also made the ports of the Erect stages that are 
+ being used in my mod
 
 ## Mod Proposal
 * you are playing a new fnf mod vs Pico it has several engines and it is made just by one person who is me this mod has the main objective of bringing Pico as a player character and not just the mixes he received in V-Slice but bringing with it new music even if it is from another mod or even updating it, you can have in one place what is my proposal with the mod itself, I hope you like the mod and there will be more updates in the future with new things. until
 
 ## Updates
-* Next Update For CodenameEngine + Mega Update Path2
+* Next Update For [CodenameEngine](https://github.com/Lucas62944/FNF-PicoEnigne/tree/CodenameEngine) + Mega Update Path2
 
 ## Main menu Rework
 <img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" />
