@@ -17,9 +17,8 @@
 * Next Update For [CodenameEngine](https://github.com/Lucas62944/FNF-PicoEnigne/tree/CodenameEngine) + Mega Update Path2
 
 ## Main menu Rework
-<img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" />
-There are some more things in the main menu like new Achievements
-we will have story mode back with week 3 of Arrow funk and much more
+<img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" /> 
+There are some more things in the main menu like new Achievements we will have story mode back with week 3 of Arrow funk and much more
 
 ## Pause Menu Rework And Part2
 <img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/b559c1ae-e77c-4f26-813c-20a94d456720" />
