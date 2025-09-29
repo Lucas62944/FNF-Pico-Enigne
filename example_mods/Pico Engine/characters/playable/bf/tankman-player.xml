@@ -1,0 +1,14 @@
+<!DOCTYPE codename-engine-character>
+<character x="50" y="80" sprite="Playable_Tankman_Assets" flipX="true" camx="-260" isPlayer="true" icon="tankman" color="#FFFFFF" gameOverChar="tankman-death" newProperty="valueHere">
+	<anim name="idle" anim="Tankman Idle" x="90" y="-90"/>
+	<anim name="singUP" anim="Tankman Up" x="114" y="-40"/>
+	<anim name="singDOWN" anim="Tankman Down" x="170" y="-194"/>
+	<anim name="singRIGHT" anim="Tankman Right" x="70" y="-102"/>
+	<anim name="singLEFT" anim="Tankman Left" x="181" y="-118"/>
+	<anim name="singUPmiss" anim="Tankman MissUp" x="114" y="-40"/>
+	<anim name="singDOWNmiss" anim="Tankman MissDown" x="174" y="-194"/>
+	<anim name="singRIGHTmiss" anim="Tankman MissRight" x="72" y="-102"/>
+	<anim name="singLEFTmiss" anim="Tankman MissLeft" x="194" y="-115"/>
+	<anim name="hey" anim="Tankman ThumbUp" x="148" y="-95"/>
+	<anim name="ugh" anim="Tankman Ugh" x="77" y="-99"/>
+</character>
