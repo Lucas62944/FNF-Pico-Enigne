@@ -1,9 +1,0 @@
-{
-	"name": "PicoEngine",
-	"description": "put your mods here",
-	"restart":false,
-	"runsGlobally": false,
-	"color": [183, 216, 85],
-	"discordRPC": "863222024192262205",
-	"iconFramerate": 10
-}
