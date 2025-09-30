@@ -3,7 +3,7 @@
 * [JS-Engine](https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html)
 
 ## Credits/Mobile
-* [Lucas](https://github.com/Lucas62944) - Main Programmer and Head of PicoEngine
+* [Lucas](https://github.com/Lucas62944) - Main Programmer and Head of Pico Engine
 
 ## Special Thanks
 * [GitHub Copilot](https://github.com/features/copilot?locale=pt-BR) he was the one who made half of the hx files for the stages
