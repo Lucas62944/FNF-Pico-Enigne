@@ -1,4 +1,4 @@
-# Friday Night Funkin' Pico Engine [v2.3.1]
+# Friday Night Funkin' Pico Engine [v2.3.2]
 * [Click Here To Enter The Other Mod Page Thank You](https://gamejolt.com/games/Pico-Engine/948902)
 * [JS-Engine](https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html)
 
