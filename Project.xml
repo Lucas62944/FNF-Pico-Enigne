@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <project>
-
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Pico Engine" file="Engine" packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.Pico-Enigne" main="lucas.Main" version="2.3.0" company="Lucas62944" />
+	<app title="Friday Night Funkin' PicoEngine" file="PicoEngine" 
+	packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.PicoEnigne" 
+	main="lucas.states.engine.backend.app.Main" 
+	version="2.3.2 (Pre-release)" 
+	company="Lucas62944" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
@@ -14,18 +17,16 @@
 	<!--The flixel preloader is not accurate in Chrome. You can use it regularly if you embed the swf into a html file
 		or you can set the actual size of your file manually at "FlxPreloaderBase-onUpdate-bytesTotal"-->
 	<!-- <app preloader="Preloader" resizable="true" /> -->
-	<app preloader="lucas.states.vslice.funkin" />
+	<app preloader="flixel.system.FlxPreloader" />
 
 	<!--Minimum without FLX_NO_GAMEPAD: 11.8, without FLX_NO_NATIVE_CURSOR: 11.2-->
 	<set name="SWF_VERSION" value="11.8" />
 	
-	<!-- ______________________ PSYCH ENGINE CUSTOMIZATION ______________________ -->
+		<!-- ______________________ PSYCH ENGINE CUSTOMIZATION ______________________ -->
 
 	<define name="MODS_ALLOWED" if="desktop" />
 	<define name="HSCRIPT_ALLOWED" if="desktop" />
 	<define name="LUA_ALLOWED" if="desktop" />
-	<define name="HAXE_ALLOWED" if="desktop" />
-	<define name="PYTHON_ALLOWE" if="desktop" />
 	<define name="ACHIEVEMENTS_ALLOWED" />
 	<define name="DISCORD_ALLOWED" />
 	<define name="TRANSLATIONS_ALLOWED" />
@@ -74,9 +75,7 @@
 	<!-- Assets -->
 	<assets path="assets/fonts" />
 	<assets path="assets/shared"        exclude="*.ogg" if="web"/>
-	<assets path="assets/shared/scripts"        exclude="*.ogg" if="web"/>
 	<assets path="assets/shared"        exclude="*.mp3" unless="web"/>
-	<assets path="assets/modchart"        exclude="*.ogg" if="web"/>
 	<assets path="assets/embed"         exclude="*.ogg" if="web" embed="true"/>
 	<assets path="assets/embed"         exclude="*.mp3" unless="web" embed="true"/>
 	<assets path="assets/videos"        if="VIDEOS_ALLOWED"/>
