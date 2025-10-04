@@ -1,10 +1,10 @@
-# Friday Night Funkin Pico Engine [v2.3.2]
+### Friday Night Funkin Pico Engine [v2.3.2]
  ![PicoLogo](art/PicoEngineModArt.png)
-[Click Here To Download Game Jolt Version](https://gamejolt.com/games/Pico-Engine/948902)
-### Credits/Mobile
+ * [Click Here To Download Game Jolt Version](https://gamejolt.com/games/Pico-Engine/948902)
+## Credits/Mobile
 * [Lucas](https://github.com/Lucas62944) - Main Programmer and Head of Pico Engine
 
-### Special Thanks
+## Special Thanks
 * [GitHub Copilot](https://github.com/features/copilot?locale=pt-BR) he was the one who made half of the hx files for the stages
 * [Mikolka](https://github.com/mikolka9144) She made the [P-Slice](https://github.com/Psych-Slice/P-Slice) Engine and also made the ports of the Erect stages that are 
  being used in my mod
