@@ -1,4 +1,4 @@
-# Friday Night Funkin' Pico Engine [v2.3.2]
+# Friday Night Funkin Pico Engine [v2.3.2]
 ![PicoLogo](art/PicoEngineModArt.png)
 * [Click Here To Enter The Other Mod Page Thank You](https://gamejolt.com/games/Pico-Engine/948902)
 * [JS-Engine](https://www.4shared.com/rar/dRP5YySRjq/JS-Engine-Vs_Pico_V2.html)
@@ -15,7 +15,7 @@
 * you are playing a new fnf mod vs Pico it has several engines and it is made just by one person who is me this mod has the main objective of bringing Pico as a player character and not just the mixes he received in V-Slice but bringing with it new music even if it is from another mod or even updating it, you can have in one place what is my proposal with the mod itself, I hope you like the mod and there will be more updates in the future with new things. until
 
 ## Updates
-* Next Update For [CodenameEngine](https://github.com/Lucas62944/FNF-PicoEnigne/tree/CodenameEngine) + Mega Update Path 2 [v2.3.1]
+* Next Update For [CodenameEngine](https://github.com/Lucas62944/FNF-PicoEnigne/tree/CodenameEngine) + Mega Update Path 2 [v2.3.2]
 
 ## Main menu Rework
 <img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" /> 
