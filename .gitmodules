@@ -1,3 +1,6 @@
 [submodule "assets/shared"]
 	path = assets/shared
 	url = https://github.com/Lucas62944/PicoEngine.assets.shared
+[submodule "example_mods"]
+	path = example_mods
+	url = https://github.com/Lucas62944/exemplos_mods.mods
