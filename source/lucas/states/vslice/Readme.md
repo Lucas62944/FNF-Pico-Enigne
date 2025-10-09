@@ -1,2 +1,2 @@
-Add your V-slice files here
+Add your VSlice files here
 It must have the .hx extension
