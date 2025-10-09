@@ -1,7 +1,7 @@
-package mikolka.funkin.custom;
+package Lucas.funkin.custom;
 
 import haxe.Json;
-using mikolka.funkin.custom.FunkinTools;
+using Lucas.funkin.custom.FunkinTools;
 
 class FreeplayMetaJSON {
     public var freeplayWeekName:String = "";
