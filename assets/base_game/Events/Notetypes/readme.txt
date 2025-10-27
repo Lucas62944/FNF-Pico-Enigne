@@ -1,1 +1,0 @@
-Add the Notetypes to both .Lua/ .hx
