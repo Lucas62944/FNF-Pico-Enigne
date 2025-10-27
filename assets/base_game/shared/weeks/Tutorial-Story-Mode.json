@@ -1,0 +1,27 @@
+{
+	"storyName": "Tutorial (Pico Mix)",
+	"difficulties": "hard",
+	"hideFreeplay": true,
+	"weekBackground": "stage",
+	"weekBefore": "week0-Story-Mode",
+	"startUnlocked": false,
+	"songs": [
+		[
+			"tutorial",
+			"gf",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"gf",
+		"Pico2",
+		""
+	],
+	"hideStoryMode": false,
+	"hiddenUntilUnlocked": false,
+	"weekName": "Tutorial Story"
+}

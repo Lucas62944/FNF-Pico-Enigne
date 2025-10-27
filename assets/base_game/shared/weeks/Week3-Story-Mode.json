@@ -1,0 +1,45 @@
+{
+	"storyName": "PICO!",
+	"difficulties": "hard, erect, nightmare",
+	"hideFreeplay": true,
+	"weekBackground": "philly",
+	"weekBefore": "Tutorial-Story-Mode",
+	"startUnlocked": false,
+	"songs": [
+		[
+			"pico",
+			"pico",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"philly-nice",
+			"face",
+			[
+				146,
+				113,
+				253
+			]
+		],
+		[
+			"blammed",
+			"face",
+			[
+				146,
+				113,
+				253
+			]
+		]
+	],
+	"weekCharacters": [
+		"pico",
+		"bf",
+		"gf"
+	],
+	"hideStoryMode": false,
+	"weekName": "Week3 BF-Mix",
+	"hiddenUntilUnlocked": false
+}
