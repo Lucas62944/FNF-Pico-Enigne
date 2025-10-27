@@ -1,4 +1,4 @@
-<!DOCTYPE psych-engine-readme>
+<!DOCTYPE Psych Engine-readme>
 [v2.3.0 Path 1]
 Description
 
@@ -14,6 +14,7 @@ Description
 # Notes
 -  Not all songs have credits.
 **Full Changelog**: https://github.com/Lucas62944/FNF-PicoEnigne/compare/2.3.0...v2.3.0
+</readme>
 
 [v2.3.2 (Pre-Release) Path 2 Mega Update]
 Description
@@ -31,7 +32,16 @@ These stages will be available within the mod folder in the source code.
 - I renamed all the song names, and also redid the main stages of the mod
 # Features
 - the CodenameEngine version is 50% Complete
-
 **Full Changelog**: https://github.com/Lucas62944/FNF-PicoEnigne/compare/v2.3.0...2.3.2-PreRelease
-    </readme>
+</readme>
+
+[v2.3.2 Path 2 Part 1]
+Description
+# Added
+- A Custom Song has been added to the Pause menu on the Pico-Mix Results Screen
+- I also added a song dad battle-(darnell-mix)
+- Improve Darnell's Character Because I Finished Adding All The Animations That Were Supposed To Have
+- Almost All Songs Have Been Nominated for the Pause Menu
+# Features
+- And the Codename Engine Version is 70% Complete
 </readme>
