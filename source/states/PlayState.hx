@@ -46,12 +46,11 @@ import crowplexus.hscript.Expr.Error as IrisError;
 import crowplexus.hscript.Printer;
 #end
 
-// PicoEngine Settings
-import lucas.states.engine.stages.EventLoader;
+// Pico Engine
 import lucas.states.engine.backend.Song;
 import lucas.states.engine.backend.StageData;
 import lucas.states.engine.menus.freeplay.FreeplayState;
-
+import lucas.states.vslice.VslicePreload;
 
 /**
  * This is where all the Gameplay stuff happens and is managed
@@ -374,7 +373,7 @@ class PlayState extends MusicBeatState
 		dadGroup = new FlxSpriteGroup(DAD_X, DAD_Y);
 		gfGroup = new FlxSpriteGroup(GF_X, GF_Y);
 
-		EventLoader.addstage(curStage);
+		VslicePreload.addstage(curStage);
 		if(isPixelStage)
 			introSoundsSuffix = '-pixel';
 
