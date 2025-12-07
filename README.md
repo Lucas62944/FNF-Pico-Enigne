@@ -8,14 +8,16 @@
 # Menus
 * MainMenu
  ![MainMenu](arte/engine/MainMenu.png)
-- You can switch between Free Play and Credits, plus the Options Menu 
-* Freeplay Menu
+- You can switch between Free Play and Credits, plus the Options Menu
+## Freeplay Menu
 ![FreeplayMenu](art/engine/FreeplayMenu.png)
 - Here you can choose the music for the base game with the Pico playable
-* Credits Menu
+
+## Credits Menu
 ![MenuCredits](art/engine/MenuCredits.png)
+
 - Here you can see the mod credits
-* Options Menu 
+## Options Menu
 ![Options](art/engine/OptionsMenu.png)
 - Here you can see all the options available for you to use
 
