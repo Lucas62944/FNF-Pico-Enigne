@@ -1,16 +1,30 @@
-### Friday Night Funkin Pico Engine [v2.3.2]
- ![PicoLogo](art/PicoEngineModArt.png)
- * [Click Here To Download Game Jolt Version](https://gamejolt.com/games/Pico-Engine/948902)
-## Credits/Mobile
-* [Lucas](https://github.com/Lucas62944) - Main Programmer and Head of Pico Engine
-## Special Thanks
-* [GitHub Copilot](https://github.com/features/copilot?locale=pt-BR) he was the one who made half of the hx files for the stages
-* [Mikolka](https://github.com/mikolka9144) She made the [P-Slice](https://github.com/Psych-Slice/P-Slice) Engine and also made the ports of the Erect stages that are 
- being used in my mod
-## Mod Proposal
-* you are playing a new fnf mod vs Pico it has several engines and it is made just by one person who is me this mod has the main objective of bringing Pico as a player character and not   just the mixes he received in V-Slice but bringing with it new music even if it is from another mod or even updating it, you can have in one place what is my proposal with the mod itself, I hope you like the mod and there will be more updates in the future with new things. until
-## Updates
-* Next Update For [CodenameEngine](https://github.com/Lucas62944/FNF-PicoEnigne/tree/CodenameEngine) + Mega Update Path 2 [v2.3.2]
-## Main Menu Rework
-<img width="1357" height="696" alt="image" src="https://github.com/user-attachments/assets/3aac2542-36aa-4676-92d1-b7d9a5fe284a" /> 
-There are some more things in the main menu like new Achievements we will have story mode back with week 3 of Arrow funk and much more
+# Friday Night Funkin' Pico Engine
+![Logo](art/PicoEngineModArt.png)
+[Mod also on Gamejolt](https://gamejolt.com/games/Pico-Engine/948902)
+
+# Proposal
+- The main purpose of this mod is to bring remixes of Pico, both from the base game and other mods that feature Pico as a playable character
+
+# Menus
+* MainMenu
+ ![MainMenu](arte/engine/MainMenu.png)
+- You can switch between Free Play and Credits, plus the Options Menu 
+* Freeplay Menu
+![FreeplayMenu](art/engine/FreeplayMenu.png)
+- Here you can choose the music for the base game with the Pico playable
+* Credits Menu
+![MenuCredits](art/engine/MenuCredits.png)
+- Here you can see the mod credits
+* Options Menu 
+![Options](art/engine/OptionsMenu.png)
+- Here you can see all the options available for you to use
+
+## Customization
+- There isn't a customization option available yet, but I'm working on it
+
+## Credits/SpecialThanks
+[Lucas](art/credits/Lucas/Lucas.txt)
+
+[mikolka](art/credits/mikolka/mikolka.txt)
+
+[Psych Engine](art/credits/PsychEngine/PsychEngine.txt)
