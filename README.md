@@ -5,7 +5,7 @@
 # Proposal
 - The main purpose of this mod is to bring remixes of Pico, both from the base game and other mods that feature Pico as a playable character
 
-### Menus
+## Menus
 ## MainMenu
 ![MainMenu](arte/engine/MainMenu.png)
 - You can switch between Free Play and Credits, plus the Options Menu
