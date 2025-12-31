@@ -2,11 +2,11 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin' PicoEngine" file="PicoEngine" 
-	packageName="com.Lucas62944.Pico-Enigne" package="com.Lucas62944.PicoEnigne" 
+	<app title="Funkin': Pico Engine" file="VsPico" 
+	packageName="com.Lucas62944.PicoEnigne" package="The Funkin' Crew" 
 	main="lucas.states.engine.backend.app.Main" 
-	version="2.3.2 (Pre-release)" 
-	company="Lucas62944" />
+	version="2.3.3h" 
+	company="Lucas62944 + The Funkin' Crew" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
