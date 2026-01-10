@@ -113,6 +113,9 @@
 	<section if="desktop">
 		<assets path="alsoft.txt" rename="plugins/alsoft.ini" type="text" if="windows"/>
 		<assets path="alsoft.txt" rename="plugins/alsoft.conf" type="text" unless="windows"/>
+		<assets path="content/audio-config.txt" rename="content/plugins/audio-config.ini" type="text" if="windows"/>
+		<assets path="content/audio-config.txt" rename="content/plugins/audio-config.conf" type="text" unless="windows"/>
+		<assets path="content/updates/changelog.txt" rename="content/updates/changelog.hx" type="text" unless="windows"/>
 	</section>
 
 	<!-- _______________________________ Libraries ______________________________ -->
