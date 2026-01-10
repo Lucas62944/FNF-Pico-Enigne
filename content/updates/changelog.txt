@@ -1,0 +1,47 @@
+<!DOCTYPE Psych Engine-readme>
+[v2.3.0 Path 1]
+Description
+
+# Added
+- Added Erect Difficulties Rechart and Nightmare Rechart for Week 3 and Weekend 1
+- And there will also be new things in FreePlay that will be Coming Soon.
+# Removed 
+- Removed from the PicoCapableStage.hx Source Code Since it wasn't playing the animation in Abot, nene.lua was added in its place.
+- The character Pico-Gun has been removed from the Girlfriend mix in Pico and Philly-nice Charts He will only appear in the [Blammed Girlfriend Mix}
+- Fixed Crash in Pico BF Mix on FreePlay where Song Couldn't Be Played
+# Features
+- The CodenameEngine version is being made and will be Coming Soon.
+# Notes
+-  Not all songs have credits.
+**Full Changelog**: https://github.com/Lucas62944/FNF-PicoEnigne/compare/2.3.0...v2.3.0
+</readme>
+
+[v2.3.2 (Pre-Release) Path 2 Mega Update]
+Description
+# Added
+- I added nene.lua to replace the other file she had
+- I also added Week0.json with the game's Debug Mode Music
+- The following stages have also been added:
+- EndlessEncore.hx
+- HappyRon.hx
+- PolusRed.hx
+- SBz.kx
+- GreenHill.hx
+These stages will be available within the mod folder in the source code.
+# Overhaul
+- I renamed all the song names, and also redid the main stages of the mod
+# Features
+- the CodenameEngine version is 50% Complete
+**Full Changelog**: https://github.com/Lucas62944/FNF-PicoEnigne/compare/v2.3.0...2.3.2-PreRelease
+</readme>
+
+[v2.3.2 Path 2 Part 1]
+Description
+# Added
+- A Custom Song has been added to the Pause menu on the Pico-Mix Results Screen
+- I also added a song dad battle-(darnell-mix)
+- Improve Darnell's Character Because I Finished Adding All The Animations That Were Supposed To Have
+- Almost All Songs Have Been Nominated for the Pause Menu
+# Features
+- And the Codename Engine Version is 70% Complete
+</readme>
