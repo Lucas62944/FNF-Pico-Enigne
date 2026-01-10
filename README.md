@@ -1,6 +1,6 @@
 # Friday Night Funkin' Pico Engine
 ![Logo](art/PicoEngineModArt.png)
-[Mod also on Gamejolt](https://gamejolt.com/games/Pico-Engine/948902)
+- [Mod also on Gamejolt](https://gamejolt.com/games/Pico-Engine/948902)
 
 # Proposal
 - The main purpose of this mod is to bring remixes of Pico, both from the base game and other mods that feature Pico as a playable character
