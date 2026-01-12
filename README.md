@@ -25,9 +25,5 @@
 ## Customization
 - There isn't a customization option available yet, but I'm working on it
 
-## Credits/SpecialThanks
-[Lucas](art/credits/Lucas/Lucas.txt)
-
-[mikolka](art/credits/mikolka/mikolka.txt)
-
-[Psych Engine](art/credits/PsychEngine/PsychEngine.txt)
+## Credits/SpecialThanks 
+[![Lucas,mikolka,PsychEngine](art/credits/Lucas/Lucas.md,art/credits/mikolkaiconCredits.png,art/credits/PsychEngine/PsychEngine.txticonCredits2.png)
