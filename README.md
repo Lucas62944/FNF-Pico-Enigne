@@ -3,8 +3,16 @@
 - [Mod also on Gamejolt](https://gamejolt.com/games/Pico-Engine/948902)
 
 # About
-- The main purpose of this mod is to bring remixes of Pico, both from the base game and other mods that feature Pico as a playable character
+This project is a custom [Friday Night Funkin’](https://github.com/FunkinCrew/Funkin) engine based on [Psych Engine 1.0.4](https://github.com/ShadowMario/FNF-PsychEngine), developed with a primary focus on Pico Playable, inspired by the official Friday Night Funkin’ Pico content.
 
+The engine preserves the core structure of Psych Engine while introducing custom systems and internal tweaks to support Pico as a fully playable character. This includes animation handling, gameplay logic adjustments, and compatibility with existing songs, charts, and events.
+
+The main goal of this project is to provide modders with an engine that simplifies the creation of Pico-centered mods, without sacrificing the flexibility, stability, and features of the original Psych Engine
+
+Credits:
+* Psych Engine: Shadow Mario
+* Friday Night Funkin’: Ninjamuffin99, PhantomArcade, KawaiSprite, and Evilsk8r
+* Modifications and additional features: (LucasSanches/[P-Slice Team](https://gamebanana.com/studios/38275)/[Psych Plus Team](https://github.com/Psych-Plus-Team))
 ## Menus
 ## MainMenu
 ![MainMenu](arte/engine/MainMenu.png)
@@ -24,6 +32,3 @@
 
 ## Customization
 - There isn't a customization option available yet, but I'm working on it
-
-## Credits/SpecialThanks 
-[![Lucas,mikolka,PsychEngine](art/credits/Lucas/Lucas.md,art/credits/mikolkaiconCredits.png,art/credits/PsychEngine/PsychEngine.txticonCredits2.png)
