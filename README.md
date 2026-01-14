@@ -11,7 +11,7 @@ The main goal of this project is to provide modders with an engine that simplifi
 
 Credits:
 * Psych Engine: Shadow Mario
-* Friday Night Funkin’: Ninjamuffin99, PhantomArcade, KawaiSprite, and Evilsk8r
+* Friday Night Funkin’: [Ninjamuffin99](https://x.com/ninja_muffin99), [PhantomArcade](https://x.com/PhantomArcade3K), [KawaiSprite](https://x.com/kawaisprite), and Evilsk8r
 * Modifications and additional features: (LucasSanches/[P-Slice Team](https://gamebanana.com/studios/38275)/[Psych Plus Team](https://github.com/Psych-Plus-Team))
 ## Menus
 ## MainMenu
