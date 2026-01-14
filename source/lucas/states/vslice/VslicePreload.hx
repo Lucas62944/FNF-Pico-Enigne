@@ -41,7 +41,9 @@ class VslicePreload extends BaseStage
             case 'tank': new Tank();							   //Week 7 - Ugh, Guns, Stress
             case 'phillyStreets': new PhillyStreets();             //Weekend 1 - Darnell, Lit Up, 2Hot
             case 'phillyStreetsErect': new StreetsErect();         //Weekend 1 Erect - Darnell Erect
+            case 'ParappaStage': new ParappaTown();                //Parappa The Rapper Mod Stage
             default: null;
        }
     } 
+
 }
