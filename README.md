@@ -2,7 +2,7 @@
 ![Logo](art/PicoEngineModArt.png)
 - [Mod also on Gamejolt](https://gamejolt.com/games/Pico-Engine/948902)
 
-# Proposal
+# About
 - The main purpose of this mod is to bring remixes of Pico, both from the base game and other mods that feature Pico as a playable character
 
 ## Menus
