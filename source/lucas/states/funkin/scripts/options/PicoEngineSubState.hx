@@ -33,5 +33,6 @@ class PicoEngineSubState extends BaseOptionsMenu {
 		BOOL);
 		addOption(option);
 		super();
+		}
 	}
 }
