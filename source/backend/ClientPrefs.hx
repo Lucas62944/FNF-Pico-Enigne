@@ -30,6 +30,7 @@ import lucas.states.funkin.scripts.backend.Main;
 	public var comboEnabled:Bool = false;
 	public var hold:Bool = false;
 	public var hub:Bool = true;
+	public var noteskinsCharacters:String = 'Both';
 
 	public var noteOffset:Int = 0;
 	public var arrowRGB:Array<Array<FlxColor>> =
