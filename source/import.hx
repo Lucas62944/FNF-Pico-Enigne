@@ -33,7 +33,6 @@ import backend.BaseStage;
 import backend.Difficulty;
 import backend.Mods;
 import backend.Language;
-
 import backend.ui.*; //Psych-UI
 
 import objects.Alphabet;
@@ -45,6 +44,12 @@ import states.LoadingState;
 #if flxanimate
 import flxanimate.*;
 import flxanimate.PsychFlxAnimate as FlxAnimate;
+#end
+
+#if PICO_ALLOWED
+import lucas.states.funkin.scripts.menus.MainMenuState;
+import lucas.states.funkin.scripts.*;
+import lucas.states.vslice.scripts.*;
 #end
 
 //Flixel
