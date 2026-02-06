@@ -94,7 +94,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 	public static var GRID_SIZE = 40;
 	final BACKUP_EXT = '.bkp';
 
-	public var quantizations:Array<Int> = [
+	public var quantizations:Array<Int> =
+	[
 		4,
 		8,
 		12,
@@ -107,7 +108,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		96,
 		192
 	];
-	public var quantColors:Array<FlxColor> = [
+	public var quantColors:Array<FlxColor> =
+	[
 		0xFFDF0000,
 		0xFF4040CF,
 		0xFFAF00AF,
@@ -149,7 +151,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 	var waveformSprite:FlxSprite;
 	var scrollY:Float = 0;
 	
-	var zoomList:Array<Float> = [
+	var zoomList:Array<Float> =
+	[
 		0.25,
 		0.5,
 		1,
@@ -382,7 +385,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		infoBox.getTab('Information').menu.add(infoText);
 		add(infoBox);
 
-		mainBox = new PsychUIBox(mainBoxPosition.x, mainBoxPosition.y, 300, 280, ['Charting', 'Data', 'Events', 'Note', 'Section', 'Song']);
+		mainBox = new PsychUIBox(mainBoxPosition.x, mainBoxPosition.y, 300, 280, ['Charting', 'Data', 'Events', 'Note', 'Section', 'Song', 'Meta']);
 		mainBox.selectedName = 'Song';
 		mainBox.scrollFactor.set();
 		mainBox.cameras = [camUI];
@@ -434,6 +437,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		addNoteTab();
 		addSectionTab();
 		addSongTab();
+		addMetaTab();
 		
 		////// for upper box
 		addFileTab();
@@ -456,19 +460,21 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		updateGridVisibility();
 
 		// CHARACTERS FOR THE DROP DOWNS
-		var gameOverCharacters:Array<String> = loadFileList('characters/', 'data/characterList.txt');
-		var characterList:Array<String> = gameOverCharacters.filter((name:String) -> (!name.endsWith('-dead') && !name.endsWith('-death')));
+		var allCharacters:Array<String> = loadFileList('characters/', 'data/characterList.txt');
+		var characterGameOverList = allCharacters.filter((name:String) -> (name.endsWith('-dead') || name.endsWith('-death')));
+		var characterList = allCharacters.filter((name:String) -> (!name.endsWith('-dead') && !name.endsWith('-death')));
 		playerDropDown.list = characterList;
 		opponentDropDown.list = characterList;
 		girlfriendDropDown.list = characterList;
 
-		gameOverCharacters.insert(0, '');
-		gameOverCharacters.sort(function(a:String, b:String)
+		characterGameOverList = allCharacters.filter((name:String) -> (name.endsWith('-dead') || name.endsWith('-death')));
+		characterGameOverList.insert(0, '');
+		characterGameOverList.sort(function(a:String, b:String)
 		{
 			if((a == '' || a.endsWith('-dead') || a.endsWith('-death')) && !(b == '' || b.endsWith('-dead') || b.endsWith('-death'))) return -1; //Prioritize "-dead" or "-death" characters
 			return 0;
 		});
-		gameOverCharDropDown.list = gameOverCharacters;
+		gameOverCharDropDown.list = characterGameOverList;
 
 		stageDropDown.list = loadFileList('stages/', 'data/stageList.txt');
 		onChartLoaded();
@@ -496,7 +502,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		fullTipText.cameras = [camUI];
 		fullTipText.scrollFactor.set();
 		fullTipText.visible = fullTipText.active = false;
-		fullTipText.text = [
+		fullTipText.text =
+		[
 			"W/S/Mouse Wheel - Move Conductor's Time",
 			"A/D - Change Sections",
 			"Q/E - Decrease/Increase Note Sustain Length",
@@ -590,7 +597,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 
 	function openNewChart()
 	{
-		var song:SwagSong = {
+		var song:SwagSong =
+		{
 			song: 'Test',
 			notes: [],
 			events: [],
@@ -600,8 +608,8 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			offset: 0,
 
 			player1: 'bf',
-			player2: 'dad',
-			gfVersion: 'gf',
+			player2: 'bf',
+			gfVersion: 'pico',
 			stage: 'stage',
 			format: 'psych_v1'
 		};
@@ -703,12 +711,12 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 				Reflect.setField(songCopy, '__original_path', Song.chartPath);
 				var dataToSave:String = haxe.Json.stringify(songCopy);
 				//trace(chartName, dataToSave);
-				if(!FileSystem.isDirectory('backups')) FileSystem.createDirectory('backups');
-				File.saveContent('backups/$chartName.$BACKUP_EXT', dataToSave);
+				if(!FileSystem.isDirectory('content/backups/data/charts')) FileSystem.createDirectory('content/backups/data/charts');
+				File.saveContent('content/backups/data/charts/$chartName.$BACKUP_EXT', dataToSave);
 
 				if(backupLimit > 0)
 				{
-					var files:Array<String> = FileSystem.readDirectory('backups/').filter((file:String) -> file.endsWith('.$BACKUP_EXT'));
+					var files:Array<String> = FileSystem.readDirectory('content/backups/data/charts/').filter((file:String) -> file.endsWith('.$BACKUP_EXT'));
 					if(files.length > backupLimit)
 					{
 						var incorrect:Array<String> = [];
@@ -745,7 +753,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 							//trace('removed $file');
 							try
 							{
-								FileSystem.deleteFile('backups/$file');
+								FileSystem.deleteFile('content/backups/data/charts/$file');
 							}
 							catch(e:Exception) {}
 						}
@@ -3035,10 +3043,10 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		if(eventDropDown != null)
 		{
 			eventsList = [];
-			var eventFiles:Array<String> = loadFileList('custom_events/', ['.txt']);
+			var eventFiles:Array<String> = loadFileList('scripts/event/', ['.txt']);
 			for (file in eventFiles)
 			{
-				var desc:String = Paths.getTextFromFile('custom_events/$file.txt');
+				var desc:String = Paths.getTextFromFile('scripts/event/$file.txt');
 				eventsList.push([file, desc]);
 			}
 
@@ -3066,7 +3074,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			var exts:Array<String> = ['.txt'];
 			#if LUA_ALLOWED exts.push('.lua'); #end
 			#if HSCRIPT_ALLOWED exts.push('.hx'); #end
-			noteTypes = loadFileList('custom_notetypes/', exts);
+			noteTypes = loadFileList('scripts/event/notetypes/', exts);
 			for (id => noteType in Note.defaultNoteTypes)
 				if(!noteTypes.contains(noteType))
 					noteTypes.insert(id, noteType);
@@ -3210,7 +3218,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			}
 			if(loadedChart == null || !Reflect.hasField(loadedChart, 'song')) //Check if chart is ACTUALLY a chart and valid
 			{
-				showOutput('Error: File loaded is not a Psych Engine/FNF 0.2.x.x chart.', true);
+				showOutput('Error: File loaded is not a Pico Engine/FNF 0.8.1 chart.', true);
 				return;
 			}
 
@@ -3349,7 +3357,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 					var loadedChart:SwagSong = Song.parseJSON(fileDialog.data, filePath.substr(filePath.lastIndexOf('/')));
 					if(loadedChart == null || !Reflect.hasField(loadedChart, 'song')) //Check if chart is ACTUALLY a chart and valid
 					{
-						showOutput('Error: File loaded is not a Psych Engine/FNF 0.2.x.x chart.', true);
+						showOutput('Error: File loaded is not a Pico Engine/FNF 0.8.1 chart.', true);
 						return;
 					}
 
@@ -3382,13 +3390,13 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 			upperBox.isMinimized = true;
 			upperBox.bg.visible = false;
 
-			if(!FileSystem.exists('backups/'))
+			if(!FileSystem.exists('content/backups/data/charts/'))
 			{
 				showOutput('The "backups" folder does not exist.', true);
 				return;
 			}
 			
-			var fileList:Array<String> = FileSystem.readDirectory('backups/').filter((file:String) -> file.endsWith('.$BACKUP_EXT'));
+			var fileList:Array<String> = FileSystem.readDirectory('content/backups/data/charts/').filter((file:String) -> file.endsWith('.$BACKUP_EXT'));
 			if(fileList.length < 1)
 			{
 				showOutput('No autosave files found.', true);
@@ -3418,7 +3426,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 					var btn:PsychUIButton = new PsychUIButton(0, radioGrp.y + radioGrp.height + 20, 'Load', function()
 					{
 						var autosaveName:String = fileList[radioGrp.checked];
-						var path:String = 'backups/$autosaveName';
+						var path:String = 'content/backups/data/charts/$autosaveName';
 						state.close();
 
 						if(FileSystem.exists(path))
@@ -3428,7 +3436,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 								var loadedChart:SwagSong = Song.parseJSON(File.getContent(path), autosaveName, null);
 								if(loadedChart == null || !Reflect.hasField(loadedChart, '__original_path'))
 								{
-									showOutput('Error: File loaded is not a valid Psych Engine autosave.', true);
+									showOutput('Error: File loaded is not a valid Pico Engine autosave.', true);
 									return;
 	
 								}
@@ -3482,7 +3490,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 						var eventsFile:SwagSong = Song.parseJSON(fileDialog.data, filePath.substr(filePath.lastIndexOf('/')));
 						if(eventsFile == null || Reflect.hasField(eventsFile, 'scrollSpeed') || eventsFile.events == null)
 						{
-							showOutput('Error: File loaded is not a Psych Engine chart/events file.', true);
+							showOutput('Error: File loaded is not a Pico Engine chart/events file.', true);
 							return;
 						}
 	
@@ -3722,19 +3730,19 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		tab_group.add(btn);
 
 		btnY += 20;
-		var btn:PsychUIButton = new PsychUIButton(btnX, btnY, '  Psych to V-Slice...', function()
+		var btn:PsychUIButton = new PsychUIButton(btnX, btnY, '  Pico to V-Slice...', function()
 		{
 			if(!fileDialog.completed) return;
 			upperBox.isMinimized = true;
 			upperBox.bg.visible = false;
 
-			fileDialog.open('song.json', 'Open a Psych Engine Chart JSON', function()
+			fileDialog.open('song.json', 'Open a Pico Engine Chart JSON', function()
 			{
 				var filePath:String = fileDialog.path.replace('\\', '/');
 				var loadedChart:SwagSong = Song.parseJSON(fileDialog.data, filePath.substr(filePath.lastIndexOf('/')));
 				if(loadedChart == null || !Reflect.hasField(loadedChart, 'song')) //Check if chart is ACTUALLY a chart and valid
 				{
-					showOutput('Error: File loaded is not a Psych Engine 0.x.x/FNF 0.2.x.x chart.', true);
+					showOutput('Error: File loaded is not a Pico Engine 2.3.4/FNF 0.8.1 chart.', true);
 					return;
 				}
 
@@ -3886,7 +3894,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 		tab_group.add(btn);
 
 		btnY += 20;
-		var btn:PsychUIButton = new PsychUIButton(btnX, btnY, '  V-Slice to Psych...', function()
+		var btn:PsychUIButton = new PsychUIButton(btnX, btnY, '  V-Slice to Pico...', function()
 		{
 			if(!fileDialog.completed) return;
 			upperBox.isMinimized = true;
@@ -3916,7 +3924,7 @@ class ChartingState extends MusicBeatState implements PsychUIEventHandler.PsychU
 						var pack:PsychPackage = VSlice.convertToPsych(chart, metadata);
 						if(pack.difficulties != null)
 						{
-							fileDialog.openDirectory('Save Converted Psych JSONs', function()
+							fileDialog.openDirectory('Save Converted Pico JSONs', function()
 							{
 								var path:String = fileDialog.path.replace('\\', '/');
 								if(!path.endsWith('/')) path += '/';
